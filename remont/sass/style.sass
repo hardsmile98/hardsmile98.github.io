@@ -1,0 +1,83 @@
+@font-face
+	font-family: "PrahoPro-BoldItalic"
+	src : url("../fonts/PrahoPro-BoldItalic.ttf")
+
+@font-face
+	font-family: "PrahoPro-LightItalic"
+	src : url("../fonts/PrahoPro-LightItalic.ttf")
+
+@font-face
+	font-family: "PrahoPro-Regular"
+	src : url("../fonts/PrahoPro-Regular.ttf")
+
+@font-face
+	font-family: "OpenSans-Light"
+	src : url("../fonts/OpenSans-Light.ttf")
+
+@font-face
+	font-family: "OpenSans-Regular"
+	src : url("../fonts/OpenSans-Regular.ttf")
+
+@font-face
+	font-family: "OpenSans-SemiBold"
+	src : url("../fonts/OpenSans-SemiBold.ttf")
+
+@font-face
+	font-family: "OpenSans-Bold"
+	src : url("../fonts/OpenSans-Bold.ttf")
+
+body
+	font-size: 16px
+	font-family: "OpenSans-Regular"
+	color: #1F1F1F
+
+.bg_fon
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,0.5)
+	top: 0
+	left: 0
+	z-index: 99
+
+@import "main.sass"
+@import "other.sass"
+@import "adaptive.sass"
+
+.slick-slide
+	outline: none
+
+@keyframes pulsing
+	0%
+		transform: scale(0.9, 0.9)
+	50%
+		transform: scale(1.1, 1.1)
+	100%
+		transform: scale(0.9, 0.9)
+
+.autoflash
+	overflow: hidden
+	position: relative
+
+.flash
+	content: ""
+	background-color: rgba(255, 255, 255, 0.5)
+	height: 100%
+	width: 3em
+	display: block
+	position: absolute
+	top: 0
+	left: -4.5em
+	transform: skewX(-45deg) translateX(0)
+	transition: none
+
+.lighting
+	animation: moving 4s ease-in-out infinite
+
+@keyframes moving 
+	40%
+		transform: skewX(-45deg) translateX(53.5em)
+	100%
+		transform: skewX(-45deg) translateX(53.5em)
+     

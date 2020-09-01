@@ -1,0 +1,689 @@
+.quiz
+	width: 970px
+	background: #fff
+	&_form
+		display: flex
+		flex-wrap: wrap
+		&_main
+			position: relative
+			padding: 60px 50px 0px 50px
+			width: 720px
+			min-height: 600px
+			&_line
+				position: absolute
+				left: 0
+				top: 0
+				width: 100px
+				height: 10px
+				background: #FFB960
+			&_step
+				font-size: 12px
+				line-height: 22px
+				color: #1F1F1F
+				opacity: 0.2
+				font-family: "OpenSans-SemiBold"
+			&_slider
+				margin-top: 15px
+				&_item
+					&_title
+						font-family: "PrahoPro-Regular"
+						font-size: 40px
+						line-height: 35px
+						color: #1F1F1F
+					&_wrap
+						margin-top: 60px
+						width: calc(100% + 25px)
+						display: flex
+						flex-wrap: wrap
+					&_label
+						cursor: pointer
+						width: 190px
+						margin-right: 25px
+						&_img
+							position: relative
+							display: block
+							border-radius: 5px
+							background-repeat: no-repeat
+							background-position: center
+							background-size: cover
+							width: 100%
+							height: 170px
+						&_img:after
+							display: block
+							content: ""
+							width: 100%
+							height: 100%
+							background: rgba(255,255,255,0.6)
+							position: absolute
+							top: 0
+							right: 0
+							opacity: 1
+							transition: 0.3s all ease
+						&_input
+							display: none
+						&_title
+							transition: 0.3s all ease
+							margin-top: 15px
+							display: block
+							text-align: center
+							color: #1F1F1F
+							opacity: 0.4
+							font-family: "OpenSans-SemiBold"
+
+					&_click
+						margin-top: 45px
+						width: 270px
+						margin-bottom: 80px
+						position: relative
+					&_phone
+						width: 300px
+						height: 50px
+						border-bottom: 1px solid rgba(31, 31, 31, 0.2)
+						margin: 40px 0
+		&_call
+			width: 250px
+			background: #F2F2F2
+			padding: 0 30px
+			&_wrap
+				padding-top: 105px
+				&_name
+					display: flex
+					align-items: center
+					flex-wrap: wrap
+					&_img
+						width: 40px
+						height: 40px
+						border-radius: 50%
+						position: relative
+						background-size: cover
+						background-position: center
+						background-repeat: no-repeat
+					&_img:after
+						display: block
+						content: ""
+						width: 7px
+						height: 7px
+						border-radius: 50%
+						background: #FFB960
+						position: absolute
+						right: 2px
+						bottom: 3px
+					&_text
+						margin-left: 10px
+						color: #989898
+						font-size: 12px
+						line-height: 14px
+						opacity: 0.7
+				&_text
+					margin-top: 50px
+					&_title
+						font-size: 16px
+						line-height: 18px
+						color: #989898
+						opacity: 0.9
+						font-family: "OpenSans-Bold"
+					&_val
+						margin-top: 12px
+						color: #989898
+						font-size: 13px
+						line-height: 18px
+						opacity: 0.7
+				&_form
+					margin-top: 50px
+					&_input
+						border-radius: 5px
+						background: rgba(100, 100, 100, 0.1)
+						width: 100%
+						height: 45px
+						padding: 0 25px
+						font-size: 13px
+						line-height: 18px
+						color: #989898
+						font-family: "OpenSans-SemiBold"
+					&_bth
+						margin-top: 15px
+						font-family: "OpenSans-SemiBold"
+						width: 100%
+						height: 45px
+						border-radius: 5px
+						font-size: 13px
+						line-height: 18px
+						color: #fff
+						background: rgba(100, 100, 100, 0.4)
+						transition: 0.3s all ease
+
+					&_bth:hover
+						background: rgba(100, 100, 100, 0.5)
+
+		&_bottom
+			width: 100%
+			background: #E49D43
+			padding: 10px 50px
+			&_wrap
+				display: flex
+				justify-content: space-between
+				&_text
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					&_icon
+						width: 45px
+						height: 45px
+						border-radius: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+						border: 1px solid #916124
+						color: #916124
+						font-size: 21px
+						opacity: 0.4
+					&_val
+						margin-left: 15px
+						color: #916124
+						width: 310px
+						font-size: 18px
+						line-height: 22px
+						font-family: "OpenSans-Bold"
+						opacity: 0.9
+
+				&_gift
+					text-align: right
+					background: #FFCB88
+					border-radius: 5px
+					color: #795C36
+					opacity: 0.9
+					padding: 15px 20px 20px 20px
+					&_title
+						font-size: 12px
+						line-height: 22px
+					&_sum
+						display: none
+						font-size: 18px
+						line-height: 22px
+						font-family: "OpenSans-Bold"
+
+.quiz_form_main_slider_item_send .offer_wrap_bottom_bth_click_name
+	width: 100%
+	text-align: center
+
+.gift_sum_active
+	display: block
+
+.label_active .quiz_form_main_slider_item_label_img:after
+	opacity: 0
+.label_active .quiz_form_main_slider_item_label_title
+	color: #E49D43
+	opacity: 1
+
+.bth_noactive
+	border-bottom: 3px solid #d0d0d0
+	background: #DADADA
+	box-shadow: none
+	cursor: auto
+
+
+.bth_noactive .offer_wrap_bottom_bth_click_name
+	color: #A7A7A7
+.bth_noactive .offer_wrap_bottom_bth_click_fon
+	display: none
+.bth_noactive .lighting
+	display: none
+
+.bth_noactive:before
+	display: block
+	content: ""
+	width: 100%
+	height: 100%
+	position: absolute
+	z-index: 10
+	top: 0
+	left: 0
+
+.quiz_form_main_slider_item_click .offer_wrap_bottom_bth_click_name
+	width: 100%
+	height: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+	cursor: pointer
+
+.quiz.fancybox-content
+	padding: 0
+	cursor: auto
+
+.header
+	&_white
+		color: #1F1F1F
+	&_white:hover
+		color: #1F1F1F
+	&_icon
+		border: 1px solid rgba(0, 0, 0, 0.1)
+		background: #fff
+	&_icon:hover
+		background: rgba(0,0,0,0.02)
+	&_whatsapp
+		background-image: url("../img/whatsapp_grey.svg")
+	&_telegram
+		background-image: url("../img/telegram_grey.svg")
+	&_phone
+		background-image: url("../img/phone_grey.svg")
+
+.thanks
+	background: #fafafa
+	padding: 140px 0 200px 0
+	&_wrap
+		text-align: center
+		&_title
+			font-family: "PrahoPro-Regular"
+			font-size: 50px
+			line-height: 60px
+			width: 660px
+			margin: 0 auto
+			padding-top: 15px
+		&_bth
+			margin: 0 auto
+			margin-top: 95px
+			width: 280px
+			&_icon
+				position: relative
+				z-index: 2
+				margin-right: 10px
+
+.cabinet
+	background: #fafafa
+	padding: 90px 0 270px 0
+	&_wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&_link
+			background: #fff
+			box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.03)
+			border-radius: 5px
+			width: 370px
+			text-align: center
+			cursor: pointer
+			transition: 0.3s all ease
+			position: relative
+			&_active > &_title
+				color: #E0A75E
+			&_active:after
+				display: block
+				content: ""
+				position: absolute
+				bottom: -40px
+				left: calc(50% - 20px)
+				width: 0
+				height: 0
+				border: 20px solid transparent
+				border-top: 20px solid #fff
+			&_icon
+				margin: 0 auto
+				margin-top: 50px
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 50px 
+				height: 50px
+				border-radius: 50%
+				border: 1px solid rgba(0,0,0,0.1)
+			&_title
+				padding-top: 20px
+				color: #1F1F1F
+				opacity: 0.9
+				font-size: 18px
+				line-height: 22px
+				font-family: "OpenSans-SemiBold"
+			&_more
+				margin-top: 50px
+				margin-bottom: 30px
+				&_text
+					color: #1F1F1F
+					opacity: 0.3
+					font-size: 12px
+					font-family: "OpenSans-SemiBold"
+					transition: 0.3s all ease
+		&_link:hover
+			box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1)
+		&_link:hover > &_link_more > &_link_more_text
+			color: #E0A75E
+			opacity: 1
+
+		&_item
+			display: none
+			margin-top: 80px
+			width: 100%
+			padding: 0 30px
+			&_active
+				display: block
+			&_head
+				width: 100%
+				display: flex
+				margin-bottom: 20px
+				&_col
+					width: 290px
+					padding-right: 30px
+					color: #1F1F1F
+					opacity: 0.8
+					font-size: 14px
+					line-height: 22px
+					font-family: "OpenSans-SemiBold"
+					text-transform: uppercase
+			&_row
+				width: 100%
+				border-bottom: 1px solid #E4E4E4
+				display: flex
+				&_title,&_download1,&_download2
+					width: 290px
+					padding-right: 30px
+					padding-bottom: 13px
+					padding-top: 10px
+				&_title
+					font-size: 14px
+					line-height: 22px
+					color: #1F1F1F
+					opacity: 0.6
+				&_download
+					&_text
+						font-size: 14px
+						line-height: 22px
+						color: #FFB960
+						font-family: "OpenSans-SemiBold"
+					&_mobile
+						display: none
+			&_row:last-child
+				border-bottom: none
+
+.login
+	background: #fafafa
+	padding: 100px 0 140px 0
+	&_form
+		margin: 0 auto
+		width: 500px
+		border-radius: 5px
+		background: #fff
+		padding: 50px
+		&_title
+			font-family: "PrahoPro-Regular"
+			font-size: 45px
+			line-height: 50px
+			text-align: center
+			padding-bottom: 30px
+		&_input
+			width: 100%
+			height: 50px
+			border-bottom: 1px solid rgba(31,31,31,0.2)
+			margin-bottom: 10px
+		&_bth
+			width: 100%
+			margin-top: 30px
+			&_name
+				width: 100%
+				text-align: center
+
+@media screen and (max-width: 1200px)
+	.quiz
+		width: 900px
+		&_form
+			&_main
+				width: 650px
+				&_slider
+					&_item
+						&_wrap
+							width: calc(100% + 20px)
+						&_label
+							width: 170px
+							margin-right: 20px
+							&_img
+								height: 160px
+	.cabinet
+		&_wrap
+			&_link
+				width: calc(100%/3 - 20px )
+
+@media screen and (max-width: 992px)
+	.cabinet
+		&_wrap
+			&_link
+				width: calc(100%/3 - 10px )
+	.quiz
+		width: 720px
+		&_form
+			&_main
+				min-height: auto
+				width: 470px
+				&_slider
+					&_item
+						&_title
+							font-size: 30px
+							line-height: 30px
+						&_wrap
+							margin-top: 40px
+						&_label
+							width: 175px
+						&_click,&_send
+							width: 100%
+
+
+@media screen and (max-width: 768px)
+	.quiz
+		width: 480px
+		&_form
+			&_main
+				order: 0
+				padding: 60px 25px 0px 25px
+				width: 100%
+				&_slider
+					&_item
+						&_label
+							width: calc(33% - 20px)
+							margin-right: 20px
+							&_img
+								height: 120px
+						&_click,&_send,&_phone
+							width: 100%
+			&_bottom
+				order: 1
+				width: 100%
+				padding: 30px 25px
+				&_wrap
+					flex-wrap: wrap
+					&_text
+						width: 100%
+						display: flex
+						flex-wrap: wrap
+						&_icon
+							width: 40px
+							height: 40px
+							font-size: 18px
+	
+						&_val
+							font-size: 14px
+							line-height: 16px
+
+					&_gift
+						margin-top: 10px
+						width: 100%
+						text-align: center
+						padding: 12px 0
+						display: flex
+						justify-content: center
+						&_sum
+							margin-left: 5px
+							font-size: 14px
+
+			&_call
+				order: 2
+				width: 100%
+				background: #F2F2F2
+				padding: 40px 25px 60px 25px
+				&_wrap
+					padding-top: 0
+					&_text
+						margin-top: 25px
+					&_form
+						margin-top: 30px
+
+
+	.cabinet
+		padding: 30px 0 120px 0
+		&_wrap
+			display: flex
+			padding: 0 10px
+			&_link
+				width: 100%
+				margin-top: 30px
+				&_icon
+					margin-top: 40px
+				&_more
+					margin-top: 26px
+					margin-bottom: 20px
+
+			&_item
+				padding: 0
+				margin-top: 50px
+				margin-bottom: 20px
+				&_head
+					&_download
+						display: none
+					&_col
+						width: 100%
+					&_date
+						text-align: right
+						padding-right: 0
+				&_row
+					width: 100%
+					border-bottom: 1px solid #E4E4E4
+					display: flex
+					flex-wrap: wrap
+					&_title,&_download1,&_download2
+						padding-right: 0
+						padding-bottom: 15px
+						padding-top: 10px
+					&_title
+						width: 100%
+						padding-bottom: 0
+					&_download1,&_download2
+						width: 50%
+					&_status,&_work
+						width: 50%
+					&_download2,&_date,&_status
+						text-align: right
+					&_download
+						&_mobile
+							display: inline-block
+
+	.bl2 .cabinet_wrap_item_row_title
+		width: 50%
+
+	.bl3 .cabinet_wrap_item_row_download2
+		width: 100%
+
+	.n1
+		order: 0
+	.bl1
+		order: 1
+	.n2
+		order: 2
+	.bl2
+		order: 3
+	.n3
+		order: 4
+	.bl3
+		order: 5
+
+	.thanks
+		&_wrap
+			&_title
+				font-size: 35px
+				line-height: 40px
+				width: 100%
+
+	.login
+		padding: 100px 0 120px
+		&_form
+			width: 100%
+			padding: 60px 80px
+			&_title
+				font-size: 25px
+				line-height: 30px
+
+
+@media screen and (max-width: 480px)
+	.quiz
+		width: 320px
+		&_form
+			&_main
+				&_slider
+					&_item
+						&_label
+							width: calc(50% - 20px)
+							&_img
+								height: 100px
+			&_bottom
+				&_wrap
+					&_text
+						&_val
+							width: calc(100% - 55px)
+	.thanks
+		padding: 100px 0 130px 0
+		&_wrap
+			&_bth
+				width: 100%
+
+	.login
+		padding: 60px 0 70px 0
+		&_form
+			padding: 40px 20px 50px 20px
+
+	.cabinet
+		padding: 30px 0 120px 0
+		&_wrap
+			display: flex
+			padding: 0 10px
+			&_link
+				&_icon
+					margin-top: 40px
+				&_more
+					margin-top: 26px
+					margin-bottom: 20px
+
+			&_item
+				padding: 0
+				margin-top: 50px
+				margin-bottom: 20px
+				&_head
+					&_download
+						display: none
+					&_col
+						width: 100%
+					&_date
+						text-align: right
+						padding-right: 0
+				&_row
+					width: 100%
+					border-bottom: 1px solid #E4E4E4
+					display: flex
+					flex-wrap: wrap
+					&_title,&_download1,&_download2
+						padding-right: 0
+						padding-bottom: 15px
+						padding-top: 10px
+					&_title
+						width: 100%
+						padding-bottom: 0
+					&_download1,&_download2
+						width: 50%
+					&_status,&_work
+						width: 50%
+					&_download2,&_date,&_status
+						text-align: right
+					&_download
+						&_mobile
+							display: inline-block
+
+	.bl2 .cabinet_wrap_item_row_title
+		width: 50%
+
+	.bl3 .cabinet_wrap_item_row_download2
+		width: 100%

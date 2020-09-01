@@ -1,0 +1,1079 @@
+.sectionup
+	background-image: url("../img/bg.jpg")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+.header
+	padding: 25px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+		&_logo
+			display: flex
+			align-items: center
+			flex-wrap: wrap
+			&_desc
+				width: 200px
+				font-size: 13px
+				font-family: "OpenSans-Light"
+				color: #fff
+				line-height: 18px
+				opacity: 0.7
+				margin-left: 23px
+		&_mobile
+			display: none
+			&_menu
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 40px
+				height: 40px
+				border-radius: 50%
+				background: rgba(255, 255, 255, 0.05)
+				border: 1px solid rgba(255, 255, 255, 0.15)
+				transition: 0.3s all ease
+			&_menu:hover
+				background: rgba(255, 255, 255, 0.15)
+		&_block
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: center
+			&_social
+				order: 0
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				align-items: center
+				&_link
+					margin-right: 15px
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 40px
+					height: 40px
+					border-radius: 50%
+					background: rgba(255, 255, 255, 0.05)
+					border: 1px solid rgba(255, 255, 255, 0.15)
+					transition: 0.3s all ease
+					&_icon
+						width: 100%
+						height: 100%
+						background-position: center
+						background-repeat: no-repeat
+					&_whatsapp
+						background-image: url("../img/whatsapp.svg")
+						background-size: 15px 15px
+					&_telegram
+						background-image: url("../img/telegram.svg")
+						background-size: 15px 15px
+					&_phone
+						background-image: url("../img/phone_white.svg")
+						background-size: 14px 14px
+				&_link:hover
+					background: rgba(255, 255, 255, 0.15)
+
+			&_phone
+				order: 1
+				margin-top: -5px
+				position: relative
+				padding: 0 30px 0 10px
+				&_text
+					font-family: "PrahoPro-Regular"
+					color: #F9F5E9
+					font-size: 20px
+					line-height: 30px
+				&_text:hover
+					color: #F9F5E9
+				&_link
+					display: flex
+					align-items: center
+					justify-content: flex-end
+					line-height: 14px
+					color: #FFB960
+					font-size: 12px
+					& img
+						margin-right: 5px
+				&_link:hover
+					color: #FFB960
+			&_phone:after
+				position: absolute
+				content: " "
+				display: block
+				width: 1px
+				height: 30px
+				background: #DFCDB6
+				opacity: 0.4
+				right: 0
+				top: 10px
+			&_up
+				order: 2
+				&_cabinet
+					margin-left: 30px
+					display: flex
+					align-items: center
+					color: #FFB960
+					font-size: 13px
+					text-transform: uppercase
+					font-family: "OpenSans-Bold"
+					line-height: 24px
+					& img
+						margin-right: 6px
+				&_cabinet:hover
+					color: #FFB960
+				&_close
+					display: none
+
+.offer
+	padding-top: 70px
+	&_wrap
+		padding-bottom: 60px
+		position: relative
+		&_block
+			position: relative
+			width: 886px
+			&-mobile
+				display: none
+			&_title
+				font-family: "PrahoPro-Regular"
+				color: #F9F5E9
+				font-size: 75px
+				line-height: 80px
+
+			&_gift
+				position: absolute
+				right: 30px
+				top: 145px
+		&_bottom
+			margin-top: 140px
+			&_bth
+				display: flex
+				align-items: center
+				&_text
+					font-size: 18px
+					color: #E4DDC8
+					line-height: 24px
+					font-family: "OpenSans-Light"
+					width: 300px
+					margin-right:  30px
+				&_click
+					position: relative
+					background: linear-gradient(113.77deg, rgba(255, 255, 255, 0) 15.67%, rgba(255, 255, 255, 0.12829) 30.63%, rgba(255, 255, 255, 0.291) 39.26%, rgba(255, 255, 255, 0.132273) 50.17%, rgba(255, 255, 255, 0) 64.37%), linear-gradient(90deg, #FFBA61 0%, #E4A553 100%)
+					width: 300px
+					height: 63px
+					border-radius: 10px
+					display: flex
+					justify-content: center
+					align-items: center
+					border-bottom: 3px solid #D29A52
+					box-shadow: 0px 20px 25px rgba(248, 190, 109, 0.2)
+					cursor: pointer
+					&_name
+						position: relative
+						z-index: 2
+						font-size: 14px
+						color: #8A693E
+						text-transform: uppercase
+						font-family: "OpenSans-Bold"
+
+					&_fon
+						background: #fdb860
+						position: absolute
+						z-index: 1
+						width: 100%
+						height: 100%
+						top: 0
+						left: 0
+						border-radius: 10px
+						transition: all 0.3s ease-out
+						opacity: 0
+				&_click:hover
+					color: #8A693E
+				&_click:hover > &_click_fon
+					opacity: 1
+					
+			&_arrow
+				margin-top: 15px
+				margin-left: 157px
+		&_garant
+			position: absolute
+			right: 0
+			bottom: -90px
+
+.advanteges
+	padding: 140px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_item
+			margin: 0 20px
+			width: 220px
+			text-align: center
+			&_title
+				padding-top: 15px
+				font-family: "OpenSans-SemiBold"
+				font-size: 16px
+				color: #1F1F1F
+				line-height: 22px
+
+.projects
+	background: #FAFAFA
+	padding: 75px 0
+	&_wrap
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		&_text
+			padding-top: 60px
+			width: 370px
+			&_title
+				font-size: 50px
+				line-height: 65px
+				color: #212121
+				opacity: 0.5
+				font-family: "PrahoPro-Regular"
+			&_arrow
+				margin-top: 40px
+				margin-left: 34px
+		&_slider
+			width: 750px
+			position: relative
+			&_bth
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+				position: absolute
+				right: 0
+				top: 0
+				z-index: 99
+				&_link
+					margin-left: 20px
+					width: 55px
+					height: 55px
+					display: flex
+					align-items: center
+					justify-content: center
+					border-radius: 50%
+					border: 1px solid rgba(0,0,0,0.2)
+					transition: 0.3s all ease
+				&_link:hover
+					background: #fff
+
+			&_item
+				&_person
+					display: flex
+					align-items: center
+					&_img
+						width: 55px
+						height: 55px
+						border-radius: 50%
+						& img
+							width: 100%
+							border-radius: 50%
+					&_name
+						margin-left: 25px
+						color: #1F1F1F
+						font-size: 22px
+						line-height: 22px
+						font-family: "OpenSans-SemiBold"
+						opacity: 0.9
+				&_img
+					width: 100%
+					margin-top: 30px
+					& img
+						width: 100%
+				&_text
+					display: flex
+					justify-content: space-between
+					margin-top: 30px
+					&_otzyv
+						width: 480px
+						&_value
+							font-size: 15px
+							line-height: 20px
+							color: #1F1F1F
+							opacity: 0.9
+							min-height: 120px
+					&_block
+						font-family: "OpenSans-SemiBold"
+						&_title
+							font-size: 12px
+							color: #1F1F1F
+							opacity: 0.3
+							text-transform: uppercase
+						&_value
+							line-height: 22px
+							font-size: 22px
+							color: #1F1F1F
+							opacity: 0.9
+
+.examples
+	padding: 120px 0 140px 0
+	&_wrap
+		padding: 0 110px
+		&_up
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+			margin-bottom: 30px
+			&_title
+				font-size: 50px
+				line-height: 65px
+				font-family: "PrahoPro-Regular"
+				color: #212121
+			&_block
+				margin-top: 30px
+				display: flex
+				align-items: center
+				&_icon
+					position: relative
+					width: 68px
+					height: 68px
+					display: flex
+					justify-content: center
+					align-items: center
+				&_icon:after
+					display: block
+					content: " "
+					position: absolute
+					top: 0
+					left: 0
+					width: 68px
+					height: 68px
+					border-radius: 50%
+					background: rgba(255,185,96,0.2)
+					animation: pulsing 2s infinite
+				&_text
+					margin-left: 15px
+					font-family: "OpenSans-Light"
+					width: 270px
+					line-height: 22px
+					color: #DCA35A
+					opacity: 0.9
+		
+		&_img
+			overflow: hidden
+			position: relative
+			width: 100%
+			& img
+				width: 100%
+			&_kv3dbedroom, &_kv3dkitchen,&_kv3dbathroom,&_kv3dlivingroom
+				position: absolute
+				top: 0
+				left: 0
+				transition: 0.3s all
+				z-index: 0
+				opacity: 0
+			&_bedroom
+				z-index: 1
+				cursor: pointer
+				top: 50px
+				left: calc(50% - 120px)
+				position: absolute
+				width: 380px
+				height: 320px
+				transform: rotate(58deg)
+			&_bedroom:hover + .examples_wrap_img_kv3dbedroom
+				opacity: 1
+			&_kitchen
+				z-index: 2
+				cursor: pointer
+				top: calc(50% - 220px)
+				left: 30px
+				position: absolute
+				width: 370px
+				height: 320px
+				transform: rotate(58deg)
+			&_kitchen:hover + .examples_wrap_img_kv3dkitchen
+				opacity: 1
+			&_bathroom
+				z-index: 3
+				cursor: pointer
+				top: calc(50% - 147px)
+				right: 35px
+				position: absolute
+				width: 290px
+				height: 350px
+				transform: rotate(35deg)
+			&_bathroom:hover + .examples_wrap_img_kv3dbathroom
+				opacity: 1
+			&_livingroom
+				z-index: 4
+				cursor: pointer
+				bottom: 30px
+				left: calc(50% - 180px)
+				position: absolute
+				width: 375px
+				height: 250px
+				transform: rotate(35deg)
+			&_livingroom:hover + .examples_wrap_img_kv3dlivingroom
+				opacity: 1
+
+
+.views
+	background-image: url("../img/bg2.jpg")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+
+	padding-top: 120px
+	&_section
+		&_title
+			width: 860px
+			font-family: "PrahoPro-Regular"
+			color: #EFEBE0
+			font-size: 50px
+			line-height: 60px
+			text-align: center
+			margin: 0 auto
+		&_desc
+			margin-top: 35px
+			font-size: 22px
+			line-height: 24px
+			text-align: center
+			color: #EFEBE0
+			font-family: "OpenSans-Light"
+	&_wrap
+		position: relative
+		top: 110px
+		&_block
+			position: relative
+		&_block:after
+			display: block
+			content: ""
+			position: absolute
+			width: 98%
+			height: 40px
+			border-radius: 15px
+			left: 1%
+			bottom: -7px
+			z-index: 0
+			background: #FFFFFF
+			opacity: 0.7
+
+		&_block2
+			border-radius: 15px
+			margin-top: 40px
+			box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1)
+
+		&_blockin
+			border-radius: 15px
+			position: relative
+			z-index: 99
+			background: #fff
+			width: 100%
+			padding: 40px
+			&_up
+				padding-bottom: 40px
+				display: flex
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				&_desc
+					display: flex
+					align-items: center
+					flex-wrap: wrap
+					&_img
+						width: 250px
+						height: 160px
+						border-radius: 5px
+						& img
+							width: 100%
+							border-radius: 5px
+					&_text
+						width: 240px
+						margin-left: 40px
+						font-family: "OpenSans-SemiBold"
+						&_title
+							font-size: 22px
+							color: #1F1F1F
+							opacity: 0.9
+						&_value
+							margin-top: 10px
+							font-size: 15px
+							line-height: 20px
+							color: #1F1F1F
+							opacity: 0.5
+
+
+			&_bottom
+				padding-top: 40px
+				border-top: 1px solid rgba(196,196,196,0.2)
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				&_item
+					display: flex
+					flex-wrap: wrap
+					&_icon
+						width: 40px
+						height: 40px
+						border: 1px solid rgba(0,0,0,0.1)
+						border-radius: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+					&_text
+						width: 200px
+						margin-left: 20px
+						&_title
+							font-family: "OpenSans-SemiBold"
+							font-size: 15px
+							line-height: 20px
+							color: #1F1F1F
+						&_value
+							margin-top: 10px
+							color: #1F1F1F
+							opacity: 0.5
+							font-size: 12px
+							line-height: 18px
+
+
+.steps
+	padding: 220px 0 90px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_left
+			width: 420px
+			padding-top: 100px
+			&_title
+				font-family: "PrahoPro-Regular"
+				font-size: 50px
+				line-height: 60px
+				color: #1F1F1F
+			&_img
+				margin-top: 57px
+				margin-left: 74px
+		&_block
+			width: 560px
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			&_item
+				padding: 20px 0 40px 0
+				margin: 0 20px
+				width: 240px
+				border-bottom: 1px solid #E9E9E9
+				&_num
+					font-size: 50px
+					color: #FFB960
+					font-family: "PrahoPro-BoldItalic"
+				&_title
+					font-size: 18px
+					color: #1F1F1F
+					line-height: 22px
+					font-family: "OpenSans-SemiBold"
+					margin: 10px 0
+				&_text
+					color: #1F1F1F
+					opacity: 0.5
+					font-size: 14px
+					line-height: 20px
+			&_item:nth-child(6), &_item:nth-child(7)
+				border: none
+
+.gift
+	background: #FAFAFA
+	padding: 100px 0 200px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_img
+			margin-left: 60px
+			display: block
+			width: 416px
+			height: 624px
+			position: relative
+			&_plan
+				position: relative
+			&_foto
+				position: absolute
+				right: -55px
+				bottom: 60px
+			&_arrow
+				position: absolute
+				bottom: -30px
+				left: 310px
+
+		&_block
+			margin-top: 20px
+			display: flex
+			flex-wrap: wrap
+			margin-right: 50px
+			&_icon
+				margin-top: 15px
+				margin-right: 30px
+			&_text
+				width: 450px
+				&_title
+					font-size: 50px
+					line-height: 60px
+					font-family: "PrahoPro-Regular"
+					color: #1F1F1F
+					margin-bottom: 50px
+				&_value
+					color: #1F1F1F
+					opacity: 0.6
+					font-size: 18px
+					line-height: 25px
+					margin-top: 20px
+				&_bth
+					margin-top: 70px
+
+.control
+	&_wrap
+		padding: 130px 0 180px 0
+		position: relative
+		&_text
+			width: 550px
+			&_title
+				font-size: 50px
+				line-height: 60px
+				font-family: "PrahoPro-Regular"
+				color: #1F1F1F
+				margin-bottom: 40px
+			&_value
+				font-size: 22px
+				line-height: 25px
+				color: #1F1F1F
+		&_iphone
+			position: absolute
+			bottom: 0
+			right: 0
+
+.report
+	background: #FAC888
+	padding: 50px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_item
+			width: 290px
+			padding: 0 40px
+			&_icon
+				width: 50px
+				height: 50px
+				border: 1px solid rgba(0,0,0,0.1)
+				border-radius: 50%
+				display: flex
+				justify-content: center
+				align-items: center
+				margin-bottom: 25px
+			&_title
+				color: #766043
+				font-size: 16px
+				line-height: 22px
+				font-family: "OpenSans-SemiBold"
+			&_text
+				color: #6A5335
+				opacity: 0.5
+				font-size: 13px
+				line-height: 20px
+				margin-top: 20px
+
+.payment
+	padding: 140px 0
+	&_wrap
+		&_title
+			text-align: center
+			width: 800px
+			margin: 0 auto
+			font-size: 50px
+			line-height: 60px
+			font-family: "PrahoPro-Regular"
+			color: #1F1F1F
+		&_block
+			margin-top: 70px
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			&_item
+				width: 280px
+				margin: 0 40px
+				&_icon
+					margin: 0 auto
+					width: 70px
+					height: 70px
+					background: rgba(255,185,96,0.15)
+					border-radius: 50%
+					display: flex
+					justify-content: center
+					align-items: center
+				&_title
+					margin-top: 18px
+					font-size: 16px
+					line-height: 22px
+					text-align: center
+					color: #1F1F1F
+					font-family: "OpenSans-SemiBold"
+					opacity: 0.8
+
+		&_bth
+			margin-top: 85px
+			text-align: center
+			&_click
+				width: 350px
+				margin: 0 auto
+			&_text
+				margin-top: 15px
+				color: #1F1F1F
+				opacity: 0.8
+				font-size: 14px
+				line-height: 24px
+				font-family: "OpenSans-SemiBold"
+
+.gosts
+	background-image: url("../img/bg3.jpg")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	color: #fff
+	padding: 130px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_text
+			margin-top: 50px
+			width: 540px
+			&_title
+				margin-top: 10px
+				margin-bottom: 25px
+				font-size: 50px
+				line-height: 60px
+				font-family: "PrahoPro-Regular"
+			&_value
+				width: 420px
+				line-height: 30px
+				font-size: 22px
+		&_block
+			width: 570px
+			border: 1px solid rgba(255,255,255,0.3)
+			&_border
+				border-bottom: 1px solid rgba(255,255,255,0.3)
+			&_item
+				padding: 40px
+				display: flex
+				flex-wrap: wrap
+				&_text
+					margin-left: 25px
+					&_title
+						line-height: 20px
+						font-size: 16px
+						font-family: "OpenSans-SemiBold"
+					&_value
+						width: 352px
+						opacity: 0.8
+						font-size: 13px
+						line-height: 20px
+						margin-top: 15px
+						min-height: 60px
+
+.answer
+	padding: 170px 0 215px 0
+	&_wrap
+		text-align: center
+		&_title
+			padding-top: 10px
+			width: 660px
+			margin: 0 auto
+			font-size: 50px
+			line-height: 60px
+			color: #1F1F1F
+			font-family: "PrahoPro-Regular"
+		&_click
+			margin: 0 auto
+			margin-top: 75px
+			width: 270px
+
+.teams
+	background: #FAFAFA
+	padding: 130px 0 205px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_text
+			margin-top: 20px
+			margin-left: 100px
+			width: 540px
+			&_title
+				padding-top: 10px
+				color: #1F1F1F
+				font-size: 50px
+				line-height: 60px
+				font-family: "PrahoPro-Regular"
+			&_block
+				margin-top: 55px
+				&_item
+					display: flex
+					align-items: center
+					flex-wrap: wrap
+					margin-bottom: 40px
+					&_icon
+						width: 45px
+						height: 45px
+						border-radius: 50%
+						border: 1px solid #E9E9E9
+						display: flex
+						justify-content: center
+						align-items: center
+					&_text
+						width: 345px
+						margin-left: 20px
+						font-size: 16px
+						line-height: 22px
+						color: #1F1F1F
+
+		&_slider
+			position: relative
+			width: 485px
+			height: 465px
+			&_block
+				width: 410px
+				height: 100%
+				&_item
+					width: 100%
+					height: 100%
+					position: relative
+					&_img
+						width: 100%
+						height: 100%
+						border-radius: 5px
+						& img
+							width: 100%
+							height: 100%
+							border-radius: 5px
+					&_text
+						display: inline-block
+						margin-top: -20px
+						margin-left: 20px
+						padding: 20px 40px
+						background: #fff
+						&_name
+							font-size: 18px
+							line-height: 22px
+							color: #1F1F1F
+							font-family: "OpenSans-SemiBold"
+						&_position
+							font-size: 14px
+							line-height: 20px
+							color: #1F1F1F
+							opacity: 0.5
+
+			&_bth
+				width: 46px
+				height: 46px
+				position: absolute
+				right: 0
+				top: calc(50% - 23px)
+				&_next
+					width: 46px
+					height: 46px
+					display: flex
+					justify-content: center
+					align-items: center
+					border-radius: 50%
+					border: 1px solid #D6D6D6
+					transition: 0.3s all ease
+				&_next:hover
+					background: #fff
+
+.saving
+	padding: 40px 0
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		align-items: center
+		&_text
+			width: 560px
+			position: relative
+			&_title
+				padding-top: 10px
+				color: #1F1F1F
+				font-size: 50px
+				line-height: 60px
+				font-family: "PrahoPro-Regular"
+			&_value
+				margin: 35px 0 85px 0
+				font-size: 17px
+				line-height: 25px
+				color: #1F1F1F
+				width: 390px
+			&_arrow
+				position: absolute
+				bottom: 20px
+				right: 90px
+			&_click
+				width: 270px
+		&_img
+			width: 610px
+			& img
+				width: 100%
+
+.founder
+	padding: 110px 0
+	background: #FAC888
+	&_wrap
+		margin: 0 95px
+		&_title
+			padding-top: 10px
+			color: #766043
+			font-size: 50px
+			line-height: 60px
+			font-family: "PrahoPro-Regular"
+		&_desc
+			font-size: 22px
+			line-height: 25px
+			padding-top: 20px
+			color: #766043
+		&_block
+			position: relative
+			background: #FFD9A8
+			border-radius: 10px
+			margin-top: 65px
+			padding: 40px 0 20px 0
+			&_kovichki
+				position: absolute
+				top: -23px
+				left: 20px
+			&_text
+				width: 430px
+				margin-bottom: 20px
+				margin-left: 40px
+				font-size: 17px
+				color: #9A794E
+				line-height: 25px
+			&_img
+				position: absolute
+				right: -50px
+				bottom: 0
+
+
+.contacts
+	padding: 100px 0
+	background: #262626
+	color: #fff
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_text
+			width: 330px
+			&_title
+				font-size: 50px
+				line-height: 60px
+				font-family: "PrahoPro-Regular"
+			&_soc
+				padding-top: 25px
+				&_title
+					font-size: 12px
+					line-height: 12px
+					opacity: 0.3
+				&_block
+					margin-top: 14px
+					display: flex
+					flex-wrap: wrap
+					&_link
+						margin-right: 12px
+						width: 40px
+						height: 40px
+						border-radius: 50%
+						display: flex
+						justify-content: center
+						align-items: center
+						border: 1px solid rgba(255, 255, 255, 0.20)
+						transition: 0.3s all ease
+					&_link:hover
+						background: rgba(255, 255, 255, 0.10)
+			&_inf
+				font-family: "OpenSans-SemiBold"
+				margin-top: 35px
+				&_title
+					font-size: 12px
+					line-height: 12px
+					opacity: 0.3
+				&_val
+					font-size: 16px
+					line-height: 20px
+					opacity: 0.8
+					margin-bottom: 35px
+					margin-top: 8px
+				&_link
+					display: block
+					color: #fff
+					transition: 0.3s all ease
+				&_link:hover
+					color: #fff
+					opacity: 1
+		&_map
+			width: 670px
+			height: 500px
+
+.footer
+	&_up
+		background: #1F1F1F
+		padding: 25px
+		&_wrap
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+			&_logo
+				display: flex
+				align-items: center
+				opacity: 0.5
+				&_desc
+					width: 200px
+					font-size: 13px
+					font-family: "OpenSans-Light"
+					color: #fff
+					line-height: 18px
+					opacity: 0.5
+					margin-left: 23px
+			&_text
+				&_copy
+					font-size: 13px
+					color: #FFFFFF
+					opacity: 0.3
+					text-align: right
+					line-height: 18px
+				&_policy
+					font-size: 13px
+					text-align: right
+					text-decoration: underline
+					color: #FFFFFF
+					opacity: 0.6
+					line-height: 18px
+					transition: 0.3s all ease
+				&_policy:hover
+					color: #fff
+					opacity: 0.8
+					text-decoration: underline
+
+	&_bottom
+		padding: 10px 0
+		background: #141414
+		&_wrap
+			text-align: center
+			&_link
+				color: #727272
+				opacity: 0.7
+				font-size: 11px
+				line-height: 14px
+				transition: 0.3s all ease
+				& span
+					margin-left: 5px
+			&_link:hover
+				color: #727272
+				opacity: 1
