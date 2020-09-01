@@ -1,0 +1,165 @@
+.contact
+	&_breadcrums
+		margin-top: 50px
+	&_wrap
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&_left
+		width: 420px
+	&_right
+		width: 670px
+	&_title
+		font-size: 24px
+		margin-top: 50px
+		font-family: "Montserrat-Bold"
+	
+	&_adress, &_write
+		padding-top: 25px
+		font-size: 18px
+		font-family: "Montserrat-SemiBold"
+
+	&_atext
+		font-size: 16px
+		padding-top: 10px
+	&_write
+		&_wrap
+			padding-top: 10px
+			display: flex
+			justify-content: space-between
+			&_block
+				width: 170px
+				font-size: 16px
+				&_text
+					font-family: "Montserrat-SemiBold"
+					padding-top: 5px
+
+	&_form
+		padding: 30px 0 80px 0
+		&_title
+			font-size: 16px
+		&_call
+			margin-top: 10px
+			&_wrap
+				display: flex
+				align-items: center
+				flex-wrap: wrap
+				&_input
+					font-size: 14px
+					width: 230px
+					border: 1px solid #cdcdcd
+					border-radius: 5px
+					height: 55px
+					padding: 0 15px
+					color: #686868
+				&_bth
+					background: #007dff
+					color: #fff
+					margin-left: 10px
+					display: block
+					height: 55px
+					width: 155px
+					font-size: 16px
+					font-family: "Montserrat-Bold"
+					border-radius: 5px
+					transition: 0.3s all ease
+				&_bth:hover
+					background: #75b8fe
+			&_policy
+				margin-top: 10px
+				display: flex
+				align-items: center
+				flex-wrap: wrap
+				color: #a2a2a2
+				&_check
+					width: 15px
+					height: 15px
+				&_text
+					margin-left: 5px
+				&_link
+					color: #a2a2a2
+					transition: 0.3s all ease
+				&_link:hover
+					color: #a2a2a2
+					text-decoration: underline
+
+@media screen and (max-width: 1200px)
+	.contact
+		&_right
+			width: 480px
+
+@media screen and (max-width: 992px)
+	.contact
+		&_right
+			width: 100%
+			height: 500px
+		&_form
+			padding: 30px 0 50px 0
+			
+@media screen and (max-width: 768px)
+	.contact
+		&_left
+			width: 100%
+		&_right
+			height: 400px
+		&_title
+			font-size: 22px
+		&_adress, &_write
+			padding-top: 20px
+			font-size: 16px
+		&_atext
+			font-size: 14px
+		&_write
+			&_wrap
+				&_block
+					font-size: 14px
+
+
+		&_form
+			&_title
+				font-size: 14px
+			&_call
+				&_wrap
+					&_input
+						width: 260px
+					&_bth
+						width: calc(100% - 270px)
+						font-size: 14px
+
+@media screen and (max-width: 480px)
+	.contact
+		&_right
+			height: 300px
+		&_title
+			margin-top: 40px
+			font-size: 18px
+		&_adress, &_write
+			font-size: 14px
+		&_atext
+			font-size: 12px
+		&_write
+			&_wrap
+				&_block
+					font-size: 12px
+
+	
+		&_form
+			&_title
+				font-size: 12px
+			&_call
+				&_wrap
+					&_input
+						width: 100%
+						height: 50px
+						font-size: 12px
+					&_bth
+						margin-left: 0
+						margin-top: 10px
+						width: 100%
+						font-size: 10px
+						height: 50px
+				&_policy
+					font-size: 10px
+					&_check
+						width: 13px
+						height: 13px

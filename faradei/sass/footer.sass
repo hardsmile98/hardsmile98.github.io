@@ -1,0 +1,107 @@
+.footer
+	background: #282828
+	padding: 40px 0
+	color: #fff
+	&_wrap
+		&_up
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: center
+			&_text
+				text-align: center
+				color: #a1a1a1
+				line-height: 20px
+			&_mail
+				&_title
+					display: flex
+					justify-content: flex-end
+					font-size: 16px
+					font-family: "Montserrat-Bold"
+				&_text
+					display: flex
+					align-items: center
+					& p
+						font-size: 16px
+						padding-left: 8px
+
+		&_bottom
+			margin-top: 40px
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			align-items: center
+			font-size: 12px
+
+			&_policy
+				color: #fff
+				transition: 0.3s all ease
+			&_policy:hover
+				color: #fff
+				text-decoration: underline
+			&_developer
+				color: #bdbdbd
+				& a
+					color: #bdbdbd
+					font-family: "Montserrat-SemiBold"
+
+@media screen and (max-width: 992px)
+	.footer
+		&_wrap
+			&_bottom
+				&_copy
+					display: none
+
+
+@media screen and (max-width: 768px)
+	.footer
+		&_wrap
+			&_up
+				&_text
+					display: none
+				&_mail
+					&_title
+						font-size: 14px
+					&_text
+						& img
+							width: 18px
+							height: 18px
+						& p
+							font-size: 14px
+			&_bottom
+				margin-top: 25px
+
+@media screen and (max-width: 480px)
+	.footer
+		&_wrap
+			&_up
+				&_text
+					font-size: 10px
+					display: block
+					margin-top: 10px
+					width: 100%
+				&_logo
+					width: 100%
+					text-align: center
+				&_mail
+					margin-top: 10px
+					width: 100%
+					&_title
+
+						justify-content: center
+					&_text
+						justify-content: center
+
+			&_bottom
+				&_policy
+					width: 100%
+					text-align: center
+				&_copy
+					display: block
+					width: 100%
+					text-align: center
+					margin-top: 10px
+				&_developer
+					width: 100%
+					margin-top: 10px
+					text-align: center

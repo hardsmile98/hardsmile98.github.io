@@ -1,0 +1,275 @@
+.order
+	padding: 50px 0
+	&_title
+		font-size: 24px
+		margin-top: 50px
+		font-family: "Montserrat-Bold"
+	&_form
+		padding: 30px 0 50px 0
+		&_block
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		&_left
+			width: 380px
+		&_right
+			width: 700px
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+		&_wrap
+			width: 380px
+		&_file
+			margin-top: 44px
+			&_input
+				display: none
+			&_wrap
+				cursor: pointer
+				display: flex
+				flex-direction: column
+				padding: 23px 0
+				width: 240px
+				font-size: 14px
+				border: 1px solid #007dff
+				border-radius: 3px
+				color: #007dff
+				transition: 0.3s all ease
+				& span
+					text-align: center
+				&_text
+					margin-top: 8px
+			&_wrap:hover > &_wrap_text
+				text-decoration: underline
+		&_col
+			&_title
+				font-size: 16px
+				padding-bottom: 20px
+			&_input
+				padding: 0 15px
+				width: 100%
+				height: 42px
+				border-radius: 3px
+				font-size: 14px
+				color: #000
+				border: 1px solid #cdcdcd
+				margin-bottom: 15px
+			&_input:focus
+				border: 1px solid #007dff
+			&_textarea
+				padding: 15px 15px
+				width: 100%
+				border-radius: 3px
+				font-size: 14px
+				color: #000
+				border: 1px solid #cdcdcd
+				margin-bottom: 15px
+			&_textarea:focus
+				border: 1px solid #007dff
+
+
+		&_title
+			margin-top: 70px
+			margin-bottom: 20px
+			font-size: 16px
+			font-family: "Montserrat-SemiBold"
+
+		&_table
+			width: 100%
+			font-size: 16px
+			border: 1px solid #cdcdcd
+			border-radius: 5px
+			&_head
+				border-radius: 5px 5px 0 0px
+				background: #f2f2f2
+				font-family: "Montserrat-SemiBold"
+				display: flex
+				font-size: 14px
+				justify-content: space-between
+				align-items: center
+				padding: 15px 0
+			&_row
+				padding: 15px 0
+				display: flex
+				justify-content: space-between
+				align-items: center
+				border-bottom: 1px solid #cdcdcd
+			&_col1
+				width: 570px
+				padding: 0 30px
+			&_col2
+				min-width: 120px
+				display: flex
+				align-items: center
+				&_count
+					width: 80px
+					height: 30px
+					border: 1px solid #007dff
+					border-radius: 30px
+					display: flex
+					align-items: center
+					justify-content: center
+					&_plus, &_minus
+						cursor: pointer
+						display: flex
+						justify-content: center
+						align-items: center
+						width: 16px
+						height: 16px
+						border-radius: 50%
+						background: #007dff
+						transition: 0.3s all ease
+					&_plus:hover, &_minus:hover
+						background: #75b8fe
+					&_val
+						margin: 0 3px
+						width: 28px
+						text-align: center
+				&_delete
+					cursor: pointer
+					margin-left: 10px
+					width: 30px
+					height: 30px
+					border-radius: 50%
+					border: 1px solid #ff0000
+					display: flex
+					justify-content: center
+					align-items: center
+					transition: 0.3s all ease
+					&_icon
+						transition: 0.3s all ease
+						width: 17px
+						height: 17px
+						display: block
+						background-image: url('../img/delete.svg')
+						background-size: 17px 17px
+						background-position: center
+						background-repeat: no-repeat
+				&_delete:hover
+					background: #ff0000
+				&_delete:hover > &_delete_icon
+					background-image: url('../img/delete-active.svg')
+
+			&_col3, &_col4
+				width: 180px
+				text-align: center
+			&_total
+				font-size: 18px
+				display: flex
+				justify-content: flex-end
+				font-family: "Montserrat-SemiBold"
+				width: 100%
+				padding: 15px 30px
+
+		&_ord
+			margin-top: 20px
+			width: 100%
+			display: flex
+			justify-content: flex-end
+			&_bth
+				background: #007dff
+				color: #fff
+				display: block
+				height: 45px
+				line-height: 45px
+				padding: 0 20px
+				font-size: 16px
+				font-family: "Montserrat-Bold"
+				border-radius: 5px
+				transition: 0.3s all ease
+			&_bth:hover
+				background: #75b8fe
+
+@media screen and (max-width: 1200px)
+	.order
+		&_form
+			&_left
+				width: 420px
+			&_right
+				width: 420px
+				height: 158px
+			&_wrap
+				width: 100%
+			&_file
+				margin-top: 0px
+
+@media screen and (max-width: 992px)
+	.order
+		&_form
+			&_left
+				width: calc(50% - 10px)
+			&_right
+				width: calc(50% - 10px)
+
+@media screen and (max-width: 768px)
+	.order
+		&_title
+			font-size: 22px
+		&_form
+			&_left
+				width: 100%
+			&_right
+				margin-top: 30px
+				width: 100%
+				&_wrap
+					width: 100%
+			&_file
+				width: 100%
+				&_wrap
+					width: 100%
+					padding: 15px 0
+			&_title
+				margin-top: 150px
+			&_table
+				font-size: 14px
+				&_head
+					font-size: 12px
+				&_col1
+					padding: 0 10px
+				&_col4
+					padding-right: 10px
+					padding-left: 5px
+				&_total
+					font-size: 16px
+			&_ord
+				&_bth
+					font-size: 12px
+
+@media screen and (max-width: 480px)
+	.order
+		&_title
+			font-size: 18px
+		&_form
+			padding: 30px 0
+			&_col
+				&_title
+					font-size: 12px
+					padding-bottom: 10px
+				&_input
+					font-size: 12px
+					height: 40px
+				&_textarea
+					font-size: 12px
+			&_right
+				margin-top: 20px
+				&_wrap
+					width: 100%
+			&_file
+				width: 100%
+				&_wrap
+					width: 100%
+					padding: 15px 0
+					font-size: 12px
+			&_title
+				margin-top: 100px
+			&_title
+				font-size: 14px
+			&_table
+				font-size: 12px
+				&_col2
+					display: none
+				&_total
+					font-size: 14px
+			&_ord
+				&_bth
+					width: 100%
+					font-size: 10px

@@ -1,0 +1,183 @@
+
+.product
+	padding: 50px 0
+	&_info
+		padding: 50px 0
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&_slider
+			width: 460px
+			&_box
+				border: 1px solid #007dff
+			&_nav
+				margin: 0 -10px
+				& .slick-track
+					padding: 20px 0
+				& .slick-slide
+					border: 1px solid #007dff
+					margin: 0 10px
+				& .slick-current
+					box-shadow: 0px 0px 6px 0px #34b9ff
+		&_wrap
+			width: 570px
+			font-size: 14px
+			&_title
+				font-size: 24px
+				font-family: "Montserrat-Bold"
+			&_articul
+				padding-top: 20px
+				& span
+					font-family: "Montserrat-SemiBold"
+			&_count
+				padding-top: 10px
+				color: #239d58
+				& span
+					font-family: "Montserrat-SemiBold"
+			&_price
+				padding-top: 15px
+				font-size: 24px
+				font-family: "Montserrat-Bold"
+			&_order
+				padding: 15px 0 
+				display: flex
+				align-items: center
+				flex-wrap: wrap
+
+				&_bth
+					display: block
+					border-radius: 5px
+					color: #fff
+					font-size: 16px
+					background: #007dff
+					height: 45px
+					line-height: 45px
+					width: 200px
+					text-align: center
+					font-family: "Montserrat-Bold"
+					transition: 0.3s all ease
+				&_bth:hover
+					background: #75b8fe
+
+				&_count
+					margin-left: 15px
+					display: flex
+					align-items: center
+					&_text
+						color: #007dff
+					&_wrap
+						margin-left: 10px
+						border: 1px solid #007dff
+						border-radius: 30px
+						height: 30px
+						width: 80px
+						justify-content: center
+						display: flex
+						align-items: center
+						&_plus, &_minus
+							cursor: pointer
+							display: flex
+							justify-content: center
+							align-items: center
+							width: 16px
+							height: 16px
+							border-radius: 50%
+							background: #007dff
+							transition: 0.3s all ease
+						&_plus:hover, &_minus:hover
+							background: #75b8fe
+						&_val
+							margin: 0 3px
+							width: 28px
+							text-align: center
+			&_teh
+				font-family: "Montserrat-SemiBold"
+				font-size: 16px
+				padding: 30px 0
+			&_table
+				width: 100%
+			&_row
+				height: 40px
+			&_head
+				font-family: "Montserrat-SemiBold"
+			&_row:nth-child(2n)
+				background: #f1f8ff
+			&_col1
+				padding-left: 10px
+			&_col2
+				text-align: center
+
+	&_desc
+		&_title
+			font-size: 24px
+			font-family: "Montserrat-Bold" 
+			padding-bottom: 20px
+		&_text
+			font-size: 18px
+			line-height: 32px
+
+@media screen and (max-width: 1200px)
+	.product
+		&_info
+			&_slider
+				width: 380px
+			&_wrap
+				width: 500px
+
+@media screen and (max-width: 992px)
+	.product
+		&_info
+			&_slider
+				width: 440px
+			&_wrap
+				margin-top: 20px
+				width: 100%
+
+
+@media screen and (max-width: 768px)
+	.product
+		&_info
+			&_slider
+				width: 100%
+			&_wrap
+				&_title
+					font-size: 22px
+				&_price
+					font-size: 22px
+				&_order
+					&_bth
+						font-size: 12px
+		&_desc
+			&_title
+				font-size: 22px
+				padding-bottom: 10px
+			&_text
+				font-size: 14px
+				line-height: 26px
+
+@media screen and (max-width: 480px)
+	.product
+		&_info
+			&_wrap
+				font-size: 12px
+				&_title
+					font-size: 18px
+					line-height: inherit
+				&_price
+					font-size: 18px
+				&_order
+					&_bth
+						width: 100%
+					&_count
+						margin-top: 15px
+						margin-left: 0px
+				&_teh
+					font-size: 14px
+
+		&_desc
+			&_title
+				font-size: 18px
+				padding-bottom: 10px
+			&_text
+				font-size: 12px
+				line-height: 24px

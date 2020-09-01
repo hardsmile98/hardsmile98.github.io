@@ -1,0 +1,160 @@
+.breadcrums
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	&_link
+		position: relative
+		margin-bottom: 5px
+		line-height: 16px
+		font-size: 12px
+		transition: 0.3s all ease
+	&_link:after
+		content: " "
+		display: block
+		opacity: 0
+		border-bottom: 1px solid #000
+		transition: 0.3s all ease
+	&_link:hover
+		&:after
+			opacity: 1
+	&_active
+		font-size: 12px
+		line-height: 16px
+		margin-bottom: 5px
+	&_icon
+		width: 9px
+		height: 9px
+		margin: 0 6px
+		margin-bottom: 5px
+
+.howwork
+	padding: 50px 0
+	&_title
+		font-size: 24px
+		margin-top: 50px
+		font-family: "Montserrat-Bold"
+	&_wrap
+		padding: 70px 0 180px 0
+		background-image: url("../img/bg-howwork.png")
+		background-position: top
+		background-repeat: no-repeat
+		&_up
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			position: relative
+		&_bottom
+			padding-top: 50px
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			position: relative
+		&_item
+			margin-top: 60px
+			text-align: center
+			width: 270px
+			&_title
+				font-size: 16px
+				font-family: "Montserrat-Bold"
+				margin: 20px 0 10px 0
+			&_text
+				line-height: 20px
+		&_item4
+			margin-right: 170px
+		&_item2:before
+			content: " "
+			display: block
+			width: 351px
+			height: 32px
+			background-image: url("../img/work-line.png")
+			background-repeat: no-repeat
+			position: absolute
+			top: 75px
+			left: 180px
+		&_item3:before
+			content: " "
+			display: block
+			width: 351px
+			height: 32px
+			background-image: url("../img/work-line.png")
+			background-repeat: no-repeat
+			position: absolute
+			top: 75px
+			right: 180px
+		&_item4:after
+			content: " "
+			display: block
+			width: 351px
+			height: 32px
+			background-image: url("../img/work-line.png")
+			background-repeat: no-repeat
+			position: absolute
+			top: 125px
+			right: 50%
+			transform: translateX(50%)
+
+@media screen and (max-width: 1200px)
+	.howwork
+		&_wrap
+			&_item4
+				margin-right: 60px
+			&_item2:before
+				width: 240px
+				height: 35px
+				background-image: url("../img/work-line960.png")
+			&_item3:before
+				width: 240px
+				height: 35px
+				background-image: url("../img/work-line960.png")
+			&_item4:after
+				width: 240px
+				height: 35px
+				background-image: url("../img/work-line960.png")
+
+@media screen and (max-width: 992px)
+	.howwork
+		&_wrap
+			padding: 0px 0 40px 0
+			display: flex
+			flex-wrap: wrap
+			background-position: center
+			&_bottom
+				padding: 0
+			&_item
+				width: 100%
+				padding: 0 60px
+			&_item4
+				margin-right: 0
+			&_item2:before
+				display: none
+			&_item3:before
+				display: none
+			&_item4:after
+				display: none
+
+@media screen and (max-width: 768px)
+	.howwork
+		&_title
+			font-size: 22px
+		&_wrap
+			&_item
+				&_img
+					width: 80px
+					height: 80px
+				&_title
+					font-size: 14px
+
+@media screen and (max-width: 480px)
+	.howwork
+		&_title
+			margin-top: 40px
+			font-size: 18px
+		&_wrap
+			&_item
+				margin-top: 50px
+				padding: 0
+				&_img
+					width: 80px
+					height: 80px
+				&_title
+					font-size: 12px
