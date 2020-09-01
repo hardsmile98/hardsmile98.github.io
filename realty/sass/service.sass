@@ -1,0 +1,205 @@
+.service
+	padding: 50px 0 100px 0
+	&_wrap
+		&_title
+			margin-top: 30px
+		&_main
+			margin-top: 30px
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			&_text
+				line-height: 20px
+			&_left
+				width: calc(50% - 30px)
+				&_img
+					background-position: center
+					background-size: cover
+					background-repeat: no-repeat
+					display: block
+					width: 100%
+					height: 400px
+				&_desc
+					margin-top: 55px
+					&_val
+						font-family: "OpenSans-SemiBold"
+						line-height: 20px
+					&_min
+						font-size: 12px
+						line-height: 17px
+
+				&_answers
+					width: 100%
+					margin: 50px 0
+					&_item
+						margin-bottom: 20px
+						cursor: pointer
+						width: 100%
+						padding: 9px 20px
+						border: 1px solid #000
+						&_head
+							display: flex
+							justify-content: space-between
+							align-items: center
+							&_text
+								padding-right: 10px
+								& span
+									font-family: "OpenSans-SemiBold"
+							&_icon
+								transition: 0.2s all ease
+
+						&_body
+							display: none
+							padding-right: 20px
+							margin-top: 10px
+							& p
+								line-height: 20px
+			
+			&_right
+				width: calc(50% - 30px)
+				&_video
+					margin-top: 40px
+					&_text
+						margin-bottom: 20px
+					&_link
+						display: flex
+						align-items: center
+						justify-content: center
+						width: 100%
+						height: 360px
+						position: relative
+						background-position: center
+						background-size: cover
+						background-repeat: no-repeat
+						& img
+							transition: 0.3s all ease
+						& img:hover
+							opacity: 0.8
+				&_price
+					width: 400px
+					margin: 0 auto
+					margin-top: 70px
+					&_title
+						margin-bottom: 10px
+					&_table
+						line-height: 20px
+						width: 100%
+						border: 1px solid #000
+						&_row
+							border-top: 1px solid #000
+							& td
+								padding: 16px 20px
+						&_head td
+							padding: 10px 20px
+							font-family: "OpenSans-SemiBold"
+					&_desc
+						margin-top: 15px
+						font-size: 10px
+						line-height: 14px
+		&_imgs
+			margin-top: 50px
+			&_box
+				margin: 0 -10px
+				margin-top: 30px
+				display: flex
+				flex-wrap: wrap
+				a
+					display: block
+					width: calc(33.3% - 20px)
+					height: 265px
+					margin: 0 10px
+					background-position: center
+					background-size: cover
+					background-repeat: no-repeat
+			&_show
+				display: block
+				margin-top: 20px
+				transition: 0.3s all ease
+			&_show:hover
+				color: #CD9162
+			&_hidden
+				display: none
+
+
+.answers_item_opened .service_wrap_main_left_answers_item_head_icon
+	transform: rotate(180deg)
+
+@media screen and (max-width: 992px)
+	.service
+		padding: 50px 0 80px 0
+		&_wrap
+			&_main
+				&_left
+					width: 100%
+				&_right
+					width: 100%
+					margin-top: 30px
+			&_imgs
+				&_box
+					a
+						height: 180px
+
+@media screen and (max-width: 768px)
+	h3
+		font-size: 20px
+	.service
+		padding: 50px 0 80px 0
+		&_wrap
+			&_main
+				margin-top: 20px
+				&_left
+					width: 100%
+					&_img
+						height: 340px
+					&_desc
+						margin-top: 30px
+					&_answers
+						margin: 30px 0
+
+				&_right
+					width: 100%
+					margin-top: 30px
+					&_video
+						&_link
+							height: 320px
+					&_price
+						margin-top: 40px
+			&_imgs
+				margin-top: 30px
+				&_box
+					a
+						height: 130px
+
+
+@media screen and (max-width: 480px)
+	h3
+		font-size: 18px
+		line-height: 25px
+	.service
+			padding: 50px 0
+			&_wrap
+				&_main
+					&_left
+						width: 100%
+						&_img
+							height: 240px
+					&_right
+						&_video
+							&_link
+								height: 240px
+						&_price
+							width: 100%
+							&_table
+								&_row
+									& td
+										padding: 12px 10px
+								&_head td
+									padding: 10px 10px
+				&_imgs
+					&_box
+						margin: 0 -5px
+						margin-top: 20px
+						a
+							width: calc(33.3% - 10px)
+							height: 80px
+							margin: 0 5px

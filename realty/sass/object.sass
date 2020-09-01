@@ -1,0 +1,421 @@
+.object
+	padding: 50px 0 100px 0
+	&_wrap
+		&_head
+			margin-top: 22px
+			border-bottom: 1px solid #CD9162
+			padding-bottom: 15px
+			&_num
+				font-size: 18px
+				line-height: 24px
+			&_block
+				margin-top: 5px
+				display: flex
+				justify-content: space-between
+				align-items: center
+				flex-wrap: wrap
+				&_price
+					width: calc(40% - 25px)
+			&_addres
+				margin-top: 10px
+				font-size: 18px
+				line-height: 24px
+		&_main
+			padding: 35px 0 50px 0
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			&_left
+				width: calc(60% - 25px)
+				&_slider
+					width: 100%
+					position: relative
+					&_back,&_next
+						position: absolute
+						z-index: 9
+						width: 30px
+						height: 30px
+						display: flex
+						justify-content: center
+						align-items: center
+						background: #CD9162
+						top: 50%
+						transform: translateY(-50%)
+					&_back
+						left: -10px
+					&_next
+						right: -10px
+					&_box
+						width: 100%
+						&_img
+							display: block
+							width: 100%
+							height: 440px
+							background-size: cover
+							background-repeat: no-repeat
+							background-position: center
+				&_nav
+					display: block
+					width: calc(100% + 16px)
+					margin: 0 -8px
+					margin-top: 35px
+					&_img
+						margin: 0 8px
+						display: block
+						cursor: pointer
+						width: 168px
+						height: 168px
+						background-size: cover
+						background-repeat: no-repeat
+						background-position: center
+				&_addres
+					margin-top: 30px
+					display: flex
+					justify-content: flex-end
+					& a
+						font-size: 12px
+						line-height: 16px
+						font-family: "OpenSans-SemiBold"
+						text-decoration: underline
+						color: #CD9162
+						transition: 0.3s all ease
+
+						& img
+							margin-left: 3px
+
+					& a:hover
+						text-decoration: underline
+						color: #CD9162
+						opacity: 0.8
+				&_text
+					margin-top: 5px
+					&_title
+						font-size: 18px
+						line-height: 25px
+						font-family: "OpenSans-SemiBold"
+						margin-bottom: 5px
+					&_val
+						font-size: 14px
+						line-height: 22px
+
+			&_right
+				width: calc(40% - 25px)
+				&_up
+					display: flex
+					justify-content: space-between
+					flex-wrap: wrap
+					align-items: center
+					&_text
+						font-size: 18px
+						line-height: 25px
+						font-family: "OpenSans-SemiBold"
+					&_bths
+						display: flex
+						align-items: center
+						& a
+							display: block
+							margin-left: 30px
+							transition: 0.3s all ease
+						& a:nth-child(1)
+							margin-left: 0
+						& a:hover
+							opacity: 0.8
+				&_text
+					margin-top: 40px
+					p
+						margin-bottom: 12px
+						& span
+							font-family: "OpenSans-SemiBold"
+				&_form
+					margin-top: 55px
+					width: 100%
+					border: 1px solid #CD9162
+					padding: 40px
+					position: relative
+					&_title
+						font-family: "OpenSans-SemiBold"
+						font-size: 18px
+						line-height: 25px
+						background: #fff
+						position: absolute
+						left: 21px
+						top: -14px
+						padding: 0 5px
+					&_block
+						display: flex
+						align-items: center
+						&_img
+							display: block
+							width: 135px
+							height: 135px
+							background-size: cover
+							background-repeat: no-repeat
+							background-position: center
+						&_text
+							margin-left: 20px
+							&_title
+								font-family: "OpenSans-SemiBold"
+							&_desc
+								font-size: 12px
+							&_phone
+								display: block
+								margin-top: 5px
+								transition: 0.3s all ease
+							&_phone:hover
+								opacity: 0.8
+							&_icons
+								display: flex
+								align-items: center
+								margin-top: 3px
+								& a
+									display: block
+									margin-right: 4px
+									transition: 0.3s all ease
+								& a:hover
+									opacity: 0.8
+							&_mail
+								display: flex
+								align-items: center
+								margin-top: 12px
+								transition: 0.3s all ease
+								& img
+									margin-right: 3px
+							&_mail:hover
+								opacity: 0.8
+					&_val
+						width: 100%
+						margin-top: 5px
+						&_box
+							width: 100%
+							height: 30px
+							position: relative
+							margin-top: 23px
+							& span
+								position: absolute
+								font-size: 12px
+								left: 16px
+								top: -8px
+								background: #fff
+								padding: 0 5px
+							& input
+								width: 100%
+								height: 100%
+								border: 1px solid #000
+								padding: 0 10px
+								font-size: 12px
+						&_checkbox
+							margin-top: 7px
+							font-size: 12px
+							display: flex
+							align-items: center
+							flex-wrap: wrap
+							&_text
+								width: 100%
+								margin-bottom: 3px
+							&_block
+								margin-right: 18px
+								& input
+									position: absolute
+									z-index: -1
+									opacity: 0
+								& label
+									display: flex
+									align-items: center
+								& label::before
+									content: ""
+									display: inline-block
+									width: 12px
+									height: 12px
+									border: 1px solid #000
+									margin-right: 7px
+									background-repeat: no-repeat
+									background-position: center center
+								& input:checked+label::before
+									background-image: url('../img/check.svg')
+						&_area
+							margin-top: 10px
+							width: 100%
+							position: relative
+							& textarea
+								width: 100%
+								resize: none
+								border: 1px solid #000
+								padding: 10px
+							& span
+								position: absolute
+								font-size: 12px
+								left: 16px
+								top: -8px
+								background: #fff
+								padding: 0 5px
+						&_bth
+							margin-top: 20px
+							width: 190px
+							height: 38px
+							color: #fff
+							background: #CD9162
+							font-family: "OpenSans-SemiBold"
+							text-align: center
+							line-height: 38px
+							transition: 0.3s all ease
+						&_bth:hover
+							opacity: 0.8
+
+		&_viewed
+			padding-top: 50px
+			&_block
+				margin: 0 -10px
+				margin-top: 30px
+				display: flex
+				flex-wrap: wrap
+
+.object_wrap_viewed_block
+	& .directory_wrap_block
+		&_item
+			width: calc(25% - 20px)
+			font-size: 14px
+			line-height: 19px
+			&_img
+				height: 195px
+			&_up
+				margin-top: 16px
+				margin-bottom: 11px
+
+@media screen and (max-width: 1200px)
+	.object
+		&_wrap
+			&_main
+				&_left
+					&_nav
+						&_img
+							height: 110px
+				&_right
+					&_form
+						padding: 25px
+						&_block
+							&_img
+								width: 110px
+								height: 110px
+							&_text
+								margin-left: 15px
+						&_val
+							width: 100%
+
+	.object_wrap_viewed_block
+		& .directory_wrap_block
+			&_item
+				&_img
+					height: 160px
+
+@media screen and (max-width: 992px)
+	.object
+		&_wrap
+			&_head
+				&_block
+					&_price
+						width: 100%
+			&_main
+				&_left
+					width: 100%
+					&_nav
+						&_img
+							height: 120px
+				&_right
+					margin-top: 30px
+					width: 100%
+					&_text
+						margin-top: 30px
+					&_form
+						padding: 40px
+						&_block
+							&_img
+								width: 130px
+								height: 130px
+							&_text
+								margin-left: 20px
+						&_val
+							width: 100%
+
+	.object_wrap_viewed_block
+		& .directory_wrap_block
+			&_item
+				width: calc(50% - 20px)
+				&_img
+					height: 250px
+
+@media screen and (max-width: 768px)
+	.object
+		padding: 50px 0 80px 0
+		&_wrap
+			&_main
+				&_left
+					&_slider
+						&_box
+							&_img
+								height: 320px
+
+					&_nav
+						margin-top: 20px
+						&_img
+							height: 100px
+
+	.object_wrap_viewed_block
+		& .directory_wrap_block
+			&_item
+				&_img
+					height: 180px
+
+@media screen and (max-width: 480px)
+	.object
+		padding: 50px 0
+		&_wrap
+			&_head
+				&_num
+					font-size: 16px
+					line-height: 20px
+				&_addres
+					font-size: 16px
+					line-height: 20px
+			&_main
+				&_left
+					&_slider
+						&_box
+							&_img
+								height: 220px
+
+					&_nav
+						width: calc(100% + 10px)
+						margin: 0 -5px
+						margin-top: 10px
+						&_img
+							margin: 0 5px
+							height: 80px
+				&_right
+					&_up
+						&_bths
+							& a
+								margin-left: 20px
+								width: 25px
+								img
+									width: 100%
+					&_text
+						margin-top: 20px
+					&_form
+						padding: 20px
+						&_block
+							&_img
+								width: 100px
+								height: 100px
+							&_text
+								margin-left: 10px
+						&_val
+							&_bth
+								width: 100%
+
+	.object_wrap_viewed_block
+		& .directory_wrap_block
+			&_item
+				width: 100%
+				margin-bottom: 30px
+				&_img
+					height: 210px

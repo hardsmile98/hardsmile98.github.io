@@ -1,0 +1,57 @@
+/*[ REBOOT ]*/
+*, *:before, *:after {
+  margin: 0px; 
+  padding: 0px; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+a{
+	color: #000;
+}
+
+a:focus {outline: none;}
+a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+/*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6,p {margin: 0px;}
+
+ul, li {
+  	margin: 0px;
+  	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input, textarea, label {
+  	display: block;
+  	outline: none;
+ 	border: none;
+}
+
+input:focus, select:focus{outline:0}
+
+/*---------------------------------------------*/
+button {
+  	outline: none;
+  	border: none;
+  	background: transparent;
+  	cursor: pointer;
+}
+
+button:focus {outline: none;}
+
+iframe {border: none;}
+
+input:not([type=checkbox]):not([type=radio]), textarea, select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
+textarea, input[type="text"], input[type="button"], input[type="submit"] {
+  border-radius: 0; }

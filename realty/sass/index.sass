@@ -1,0 +1,715 @@
+h3
+	font-size: 24px
+	line-height: 33px
+	font-family: "OpenSans-SemiBold"
+
+.offer
+	&_wrap
+		width: 100%
+		position: relative
+		&_slider
+			width: 100%
+			position: relative
+
+			&_next,&_back
+				position: absolute
+				top: 50%
+				transform: translateY(-50%)
+				transition: 0.3s all ease
+			&_next:hover,&_back:hover
+				opacity: 0.8
+			&_back
+				left: -25px
+			&_next
+				right: -25px
+			&_block
+				width: 100%
+				&_item
+					display: block
+					width: 100%
+					height: 500px
+					background-position: center
+					background-repeat: no-repeat
+					background-size: cover
+
+		&_search
+			position: absolute
+			bottom: 110px
+			right: 50%
+			transform: translateX(50%)
+			width: 935px
+			&_bth
+				display: flex
+				align-items: center
+				flex-wrap: wrap
+				&_sale,&_rent,&_build
+					display: flex
+					justify-content: center
+					align-items: center
+					height: 32px
+					width: 90px
+					font-family: "OpenSans-SemiBold"
+					color: #fff
+					text-transform: uppercase
+					transition: 0.3s all ease
+					background: #439A80
+				&_rent, &_build
+					margin-left: 5px
+				&_build
+					width: 130px
+
+				&_sale:hover,&_rent:hover,&_build:hover
+					color: #fff
+
+			&_form
+				border-top: 5px solid #F6AD73
+				display: flex
+				justify-content: space-between
+				align-items: flex-end
+				flex-wrap: wrap
+				background: rgba(255,255,255,0.9)
+				padding: 15px 30px 20px 30px
+				&_choise
+					display: none
+				&_select
+					width: 215px
+					&_title
+						margin-bottom: 8px
+					&_val
+						width: 100%
+						height: 30px
+						border: 1px solid #E9E9E9
+						border-radius: 0
+						background: #fff
+						font-size: 12px
+						line-height: 16px
+						padding: 0 9px
+						color: rgba(0,0,0,0.7)
+						appearance: none
+						background-position: calc(100% - 10px)
+						background-image: url("../img/more_black.svg")
+						background-size: 8px 5px
+						background-repeat: no-repeat
+					&_val::-ms-expand
+						display: none
+				&_price
+					width: 215px
+					&_title
+						margin-bottom: 8px
+					&_block
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+						justify-content: space-between
+						&_inp
+							border: 1px solid #E9E9E9
+							width: 100px
+							height: 30px
+							padding: 0 9px
+							font-size: 12px
+							line-height: 16px
+							color: rgba(0,0,0,0.7)
+				&_ad
+					width: 110px
+					&_title
+						margin-bottom: 8px
+					&_inp
+						border: 1px solid #E9E9E9
+						width: 100%
+						height: 30px
+						padding: 0 9px
+						font-size: 12px
+						line-height: 16px
+						color: rgba(0,0,0,0.7)
+				&_bth
+					width: 50px
+					height: 50px
+					background: #F6AD73
+					line-height: 50px
+					text-align: center
+					transition: 0.3s all ease
+				&_bth:hover
+					opacity: 0.8
+.slick-slide
+	outline: none
+
+.offer_wrap_search_bth a.choise_active
+	background: #F6AD73
+
+.directory
+	padding: 50px 0 65px 0
+	&_wrap
+		&_nav
+			margin-top: 30px
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			&_link
+				font-size: 22px
+				line-height: 30px
+				margin-right: 58px
+				transition: 0.3s all ease
+			&_link:hover
+				color: #CD9162
+			&_link:last-child
+				margin-right: 0
+			&_active
+				text-decoration: underline
+				color: #CD9162
+				font-family: "OpenSans-Bold"
+			&_active:hover
+				color: #CD9162
+				text-decoration: underline
+
+		&_block
+			display: flex
+			flex-wrap: wrap
+			margin: 0 -10px
+			margin-top: 45px
+			&_item
+				width: calc(33.3% - 20px)
+				margin: 0 10px
+				font-size: 18px
+				line-height: 25px
+				margin-bottom: 60px
+				&_img
+					display: block
+					width: 100%
+					height: 265px
+					overflow: hidden
+					&_val
+						display: block
+						width: 100%
+						height: 100%
+						background-size: cover
+						background-position: center
+						background-repeat: no-repeat
+						transition: 0.4s all ease
+				&_img:hover > &_img_val
+					transform: scale(1.1)
+				&_up
+					margin-top: 20px
+					margin-bottom: 15px
+					display: flex
+					justify-content: space-between
+					align-items: center
+					&_title
+						font-family: "OpenSans-SemiBold"
+						transition: 0.3s all ease
+					&_title:hover
+						color: #CD9162
+					&_sale
+						color: #F58227
+					&_rent
+						color: #1EAD82
+				&_addres,&_area
+					margin-bottom: 3px
+				&_area
+					font-size: 16px
+					line-height: 22px
+				&_price
+					display: flex
+					justify-content: space-between
+					align-items: center
+					&_val
+						font-family: "OpenSans-SemiBold"
+					&_num
+						font-size: 12px
+						line-height: 16px
+				&_bottom
+					margin-top: 15px
+					font-size: 12px
+					line-height: 16px
+					display: flex
+					justify-content: flex-end
+					align-items: center
+					&_text
+						margin-right: 7px
+
+			&_more
+				width: 100%
+				display: flex
+				justify-content: center
+				&_link
+					transition: 0.3s all ease
+				&_link:hover
+					opacity: 0.8
+
+.advanteges
+	background: #1F252B
+	color: #fff
+	padding: 70px 0 40px 0
+	&_wrap
+		&_block
+			margin-top: 40px
+			display: flex
+			justify-content: space-between
+			flex-wrap: wrap
+			&_item
+				display: flex
+				flex-wrap: wrap
+				align-items: center
+				margin-bottom: 60px
+				&_text
+					width: 280px
+					margin-left: 30px
+					font-size: 14px
+					line-height: 19px
+
+.commands
+	padding: 50px 0
+	background-image: url('../img/bg_command.jpg')
+	background-position: top left
+	background-repeat: no-repeat
+	&_wrap
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		flex-wrap: wrap
+		&_req
+			width: 50%
+			&_text
+				font-size: 20px
+				line-height: 27px
+				font-family: "OpenSans-SemiBold"
+			&_form
+				width: 360px
+				&_input
+					margin-top: 20px
+					&_val
+						position: relative
+						width: 100%
+						height: 54px
+						background: transparent
+						padding: 0 20px
+						border: 1px solid #1F252B
+					&_text
+						display: block
+						margin-bottom: 5px
+				&_checkbox
+					margin-top: 7px
+					display: flex
+					align-items: center
+					flex-wrap: wrap
+					font-size: 12px
+					&_text
+						width: 100%
+						margin-bottom: 3px
+					&_block
+						margin-right: 18px
+						&_val
+							position: absolute
+							z-index: -1
+							opacity: 0
+						&_label
+							display: flex
+							align-items: center
+						&_val+&_label::before
+							content: ""
+							display: inline-block
+							width: 12px
+							height: 12px
+							border: 1px solid #000
+							margin-right: 7px
+							background-repeat: no-repeat
+							background-position: center center
+						&_val:checked+&_label::before
+							background-image: url('../img/check.svg')
+
+				&_bth
+					margin-top: 20px
+					display: flex
+					align-items: center
+					flex-wrap: wrap
+					&_val
+						width: 170px
+						height: 53px
+						background: #CD9162
+						line-height: 53px
+						text-align: center
+						color: #fff
+						font-size: 18px
+						font-family: "OpenSans-SemiBold"
+						transition: 0.3s all ease
+					&_val:hover
+						opacity: 0.8
+					&_policy
+						width: calc(100% - 190px)
+						margin-left: 20px
+						font-size: 10px
+						line-height: 14px
+						&_link
+							color: #CD9162
+							transition: 0.3s all ease
+						&_link:hover
+							color: #CD9162
+							opacity: 0.8
+
+		&_com
+			width: 50%
+			&_title
+				text-align: center
+			&_block
+				margin-top: 35px
+				width: 100%
+				position: relative
+				&_back,&_next
+					position: absolute
+					top: 100px
+					transition: 0.3s all ease
+					z-index: 9
+				&_back
+					left: calc(50% - 120px)
+				&_next
+					right: calc(50% - 120px)
+				&_back:hover,&_next:hover
+					opacity: 0.8
+				&_slider
+					width: 100%
+					&_item
+						width: 265px
+						padding: 20px 45px
+						text-align: center
+						transform: scale(0.5)
+						margin: 0px -20px
+						transition: 0.3s all ease
+						&_img
+							width: 100%
+							height: 170px
+							background-repeat: no-repeat
+							background-position: center
+							background-size: cover
+						&_title
+							margin-top: 12px
+							font-family: "OpenSans-SemiBold"
+							color: #1F252B
+						&_desc
+							font-size: 12px
+							color: #1F252B
+						&_phone
+							margin-top: 5px
+							display: block
+							transition: 0.3s all ease
+						&_phone:hover
+							opacity: 0.8
+						&_icons
+							display: flex
+							justify-content: center
+							align-items: center
+							margin-top: 3px
+							& a
+								margin: 0 2px
+								transition: 0.3s all ease
+							& a:hover
+								opacity: 0.8
+						&_mail
+							margin-top: 12px
+							display: flex
+							justify-content: center
+							align-items: center
+							transition: 0.3s all ease
+							& img
+								margin-right: 3px
+						&_mail:hover
+							opacity: 0.8
+
+.commands_wrap_com_block_slider_item.slick-center
+	transform: scale(1)
+	border: 1px solid #CD9162
+
+.tidings
+	padding: 40px 0 110px 0
+	&_wrap
+		&_block
+			position: relative
+			margin-top: 35px
+			&_next,&_back
+				position: absolute
+				top: 133px
+				z-index: 9
+				width: 35px
+				height: 35px
+				background: #CD9162
+				display: flex
+				justify-content: center
+				align-items: center
+				transition: 0.3s all ease
+			&_next
+				right: -15px
+			&_back
+				left: -15px
+			&_back:hover
+				opacity: 0.9
+			&_next:hover
+				opacity: 0.9
+			&_slider
+				margin: 0 -10px
+				&_item
+					width: 295px
+					margin: 0 10px
+					&_img
+						display: block
+						width: 100%
+						height: 305px
+						&_val
+							width: 100%
+							height: 100%
+							background-repeat: no-repeat
+							background-size: cover
+							background-position: center
+					&_title
+						display: block
+						margin-top: 20px
+						font-family: "OpenSans-SemiBold"
+						transition: 0.3s all ease
+					&_title:hover
+						color: #CD9162
+					&_text
+						margin-top: 30px
+					&_bottom
+						margin-top: 14px
+						flex-wrap: wrap
+						display: flex
+						align-items: center
+						justify-content: space-between
+						&_more
+							text-decoration-line: underline
+							color: #CD9162
+							transition: 0.3s all ease
+						&_more:hover
+							text-decoration-line: underline
+							color: #CD9162
+							opacity: 0.8
+						&_follow
+							display: flex
+							align-items: center
+							& p
+								font-size: 12px
+								margin-right: 7px
+								font-family: "OpenSans-Light"
+							& a
+								transition: 0.3s all ease
+							& a:hover
+								opacity: 0.8
+
+
+@media screen and (max-width: 1320px)
+	.offer
+		&_wrap
+			width: 95%
+			margin: 0 auto
+@media screen and (max-width: 1200px)
+	.offer
+		&_wrap
+			&_search
+				bottom: 90px
+				width: 510px
+				&_form
+					&_select
+						margin-bottom: 20px
+					&_ad
+						width: 140px
+
+	.directory
+		&_wrap
+			&_block
+				&_item
+					&_img
+						height: 240px
+
+	.commands
+		background-position: -200px top
+		&_wrap
+			&_req
+				width: 320px
+				&_form
+					width: 100%
+			&_com
+				width: calc(100% - 400px)
+	.tidings
+		padding: 40px 0 110px 0
+		&_wrap
+			&_block
+				&_next,&_back
+					top: 88px
+				&_slider
+					&_item
+						&_img
+							height: 210px
+
+@media screen and (max-width: 992px)
+	.directory
+			&_wrap
+				&_block
+					&_item
+						width: calc(50% - 20px)
+						&_img
+							height: 260px
+	.advanteges
+		&_wrap
+			&_block
+				&_item
+					width: calc(50% - 30px)
+					&_text
+						width: calc(100% - 80px)
+
+	.commands
+		background-position: -180px top
+		&_wrap
+			&_com
+				&_block
+					width: 265px
+
+@media screen and (max-width: 768px)
+	.offer
+		&_wrap
+			&_search
+				bottom: 50px
+				width: 400px
+				&_form
+					&_select
+						width: 100%
+						margin-bottom: 15px
+					&_price
+						width: 100%
+						margin-bottom: 15px
+						&_block
+							&_inp
+								width: calc(50% - 10px)
+					&_ad
+						width: calc(100% - 70px)
+	.directory
+		&_wrap
+			&_nav
+				&_link
+					font-size: 18px
+					line-height: 25px
+					margin-right: 30px
+					margin-bottom: 5px
+			&_block
+				&_item
+					font-size: 16px
+					line-height: 22px
+					&_img
+						height: 180px
+					&_up
+						margin-bottom: 10px
+					&_area,&_addres
+						font-size: 14px
+						line-height: 20px
+
+	.advanteges
+		padding: 50px 0 30px 0
+		&_wrap
+			&_block
+				&_item
+					margin-bottom: 40px
+					width: 100%
+	.commands
+		padding: 50px 0 20px 0
+		background-position: center top
+		&_wrap
+			&_req
+				width: 100%
+				&_form
+					&_bth
+						&_policy
+							width: 200px
+			&_com
+				margin-top: 100px
+				width: 100%
+				&_block
+					margin: 0 auto
+					margin-top: 20px
+
+	.tidings
+		padding: 40px 0 80px 0
+		&_wrap
+			&_block
+				&_next,&_back
+					top: 103px
+				&_slider
+					&_item
+						&_img
+							height: 240px
+						&_text
+							margin-top: 10px
+
+
+@media screen and (max-width: 480px)
+	.offer
+		&_wrap
+			&_slider
+				&_back
+					left: -20px
+				&_next
+					right: -20px
+			&_search
+				bottom: 50px
+				width: 95%
+				&_bth
+					&_sale
+						width: 30%
+						font-size: 11px
+					&_rent
+						width: 30%
+						margin-left: 0
+						font-size: 11px
+					&_build
+						margin-left: 0
+						width: 40%
+						font-size: 11px
+				&_form
+					padding: 15px 20px 20px 20px
+
+	.directory
+		padding: 50px 0
+		&_wrap
+			&_nav
+				margin-top: 20px
+				&_link
+					font-size: 16px
+					line-height: 22px
+					margin-right: 25px
+			&_block
+				margin-top: 20px
+				&_item
+					font-size: 14px
+					line-height: 19px
+					width: 100%
+					margin-bottom: 40px
+					&_img
+						height: 210px
+
+	.commands
+		padding: 40px 0 20px 0
+		&_wrap
+			&_req
+				width: 100%
+				&_text
+					font-size: 18px
+					line-height: 25px
+				&_form
+					&_bth
+						margin-top: 10px
+						&_val
+							width: 100%
+						&_policy
+							width: 100%
+							margin-left: 0
+							margin-top: 8px
+			&_com
+				margin-top: 50px
+
+	.tidings
+		padding: 40px 0 60px 0
+		&_wrap
+			&_block
+				&_next,&_back
+					top: 123px
+				&_slider
+					&_item
+						&_img
+							height: 280px
+						&_text
+							margin-top: 10px

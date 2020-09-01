@@ -1,0 +1,304 @@
+.overlay
+	display: none
+.header
+	&_page
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2)
+	&_wrap
+		padding: 40px 0 20px 0
+		&_up
+			display: flex
+			justify-content: space-between
+			align-items: center
+			flex-wrap: wrap
+			&_contacts
+				&_up
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					justify-content: flex-end
+					&_icons
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+						&_link
+							margin-left: 6px
+							transition: 0.3s all ease
+						&_link:hover
+							opacity: 0.8
+					&_phones
+						display: flex
+						flex-wrap: wrap
+						&_link
+							font-size: 16px
+							line-height: 22px
+							color: #DF843D
+							font-family: "OpenSans-Bold"
+							transition: 0.3s all ease
+							margin-left: 11px
+						&_link:hover
+							color: #DF843D
+							opacity: 0.8
+
+				&_bottom
+					margin-top: 8px
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					justify-content: flex-end
+					&_mail
+						margin-left: 20px
+						display: flex
+						align-items: center
+						transition: 0.3s all ease
+						& img
+							margin-right: 4px
+					&_mail:hover
+						opacity: 0.8
+
+		&_mobile
+			display: none
+		&_nav
+			margin-top: 13px
+			display: flex
+			justify-content: flex-end
+			flex-wrap: wrap
+			&_more
+				margin-left: 4px
+				transition: 0.3s all ease
+			&_menu
+				display: flex
+				justify-content: space-between
+				flex-wrap: wrap
+				align-items: center
+				& li
+					padding-right: 44px
+					position: relative
+					& a
+						transition: 0.3s all ease
+					& a:hover
+						color: #CD9162 !important
+
+				& li:last-child
+					padding-right: 0
+				&_link
+					font-size: 14px
+					font-family: "OpenSans-SemiBold"
+					line-height: 19px
+					color: #1F252B
+					transition: 0.3s all ease
+					cursor: pointer
+				&_active
+					color: #CD9162 !important
+				&_active:hover
+					color: #CD9162
+				&_submenu
+					display: none
+					z-index: 10
+					position: absolute
+					top: 100%
+					left: 0
+					background: #FFFFFF
+					box-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2)
+					padding: 15px 22px 5px 22px
+					&_sub
+						display: none
+						margin-top: 5px
+						& li a
+							font-family: "OpenSans-Regular"
+					&_link a
+						font-family: "OpenSans-SemiBold"
+						cursor: pointer
+					&_link a:hover
+						color: #CD9162 !important
+					&_link
+						width: 100%
+						border-top: 1px solid #E9E9E9
+					& li
+						padding: 0
+						padding: 5px 0
+				&_submenu1
+					width: 340px
+				&_submenu2
+					width: 290px
+
+@media screen and (min-width: 768px) 
+	.header
+		&_wrap
+			&_nav
+				&_menu
+					& li:hover > .header_wrap_nav_menu_submenu
+						display: block
+					& li:hover > .header_wrap_nav_menu_link .header_wrap_nav_more
+						transform: rotate(180deg)
+
+@media screen and (max-width: 992px)
+	.header
+		&_wrap
+			&_up
+				align-items: flex-start
+				&_contacts
+					&_bottom
+						margin-top: 3px
+						&_addres
+							width: 100%
+							text-align: right
+						&_mail
+							margin-top: 3px
+							width: 100%
+							margin-left: 0px
+							justify-content: flex-end
+			&_nav
+				&_menu
+					width: 100%
+					& li
+						padding-right: 0
+
+@media screen and (max-width: 767px)
+	.overlay
+		display: none
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,0.8)
+	.close_mob
+		display: block
+		position: fixed
+		z-index: 90
+		top: 30px
+		right: 30px
+		cursor: pointer
+	.header
+		&_wrap
+			&_up
+				&_contacts
+					margin-top: 5px
+					width: 100%
+					&_up
+						justify-content: flex-start
+						&_icons
+							&_link:nth-child(1)
+								margin-left: 0px
+					&_bottom
+						margin-top: 8px
+						display: flex
+						flex-wrap: wrap
+						align-items: center
+						justify-content: space-between
+						&_mail
+							width: auto
+							margin-left: 0
+							justify-content: flex-start
+						&_addres
+							width: auto
+							text-align: left
+			&_mobile
+				display: block
+				margin-top: 13px
+				cursor: pointer
+				width: 100%
+				border: 1px solid #000
+				font-family: "OpenSans-SemiBold"
+				display: flex
+				justify-content: center
+				align-items: center
+				padding: 5px 0
+				& img
+					margin-right: 3px
+			&_nav
+				display: none
+				margin-top: 0
+				position: fixed
+				width: 80%
+				height: 100%
+				background: #fff
+				z-index: 30
+				left: 0
+				top: 0
+				padding: 30px
+				overflow-y: auto
+				&_more
+					width: 9px
+					height: 9px
+				&_menu
+					display: block
+					& li
+						padding: 12px 0
+						border-bottom: 1px solid #E9E9E9
+						& a
+							transition: 0.3s all ease
+							font-size: 18px
+							line-height: 26px
+							font-family: "OpenSans-Regular"
+
+					& li:last-child
+						padding-right: 0
+					&_link
+						font-family: "OpenSans-SemiBold"
+						color: #1F252B
+						transition: 0.3s all ease
+					&_active
+						color: #CD9162
+					&_active:hover
+						color: #CD9162
+					&_submenu
+						margin-left: 10px
+						margin-top: 4px
+						width: 100%
+						display: none
+						box-shadow: none
+						position: relative
+						padding: 0
+						& li
+							padding: 0
+							padding: 8px 0
+							border: none
+						& li:last-child
+							padding: 8px 0 4px 0
+
+						&_sub
+							margin-left: 10px
+							display: none
+							margin-top: 4px
+							& li:last-child
+								padding: 8px 0 0px 0
+
+							& li a
+								font-family: "OpenSans-Regular"
+	.active
+		display: block
+	.arrow
+		transform: rotate(180deg)
+
+@media screen and (max-width: 480px)
+	.close_mob
+		img
+			width: 18px
+			height: 18px
+	.header
+		&_wrap
+			&_up
+				&_contacts
+					margin-top: 5px
+					width: 100%
+					&_up
+						justify-content: flex-start
+						&_icons
+							margin-right: 20px
+						&_phones
+							&_link
+								margin-left: 0
+							&_link:nth-child(1)
+								margin-right: 20px
+
+			&_nav
+				&_more
+					width: 8px
+					height: 8px
+				&_menu
+					& li
+						& a
+							font-size: 14px
+							line-height: 18px

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="RU">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="UTF-8">
+	<title>Realty-Slovakia</title>
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/reboot.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header header_page">
+		<div class="container">
+			<div class="header_wrap">
+				<div class="header_wrap_up">
+					<div class="header_wrap_up_logo">
+						<img src="img/logo.svg" alt="logo">
+					</div>
+					<div class="header_wrap_up_contacts">	
+						<div class="header_wrap_up_contacts_up">
+							<div class="header_wrap_up_contacts_up_icons">
+								<a class="header_wrap_up_contacts_up_icons_link" href="#"><img src="img/whatsapp.svg" alt=""></a>
+								<a class="header_wrap_up_contacts_up_icons_link" href="#"><img src="img/phone.svg" alt=""></a>
+								<a class="header_wrap_up_contacts_up_icons_link" href="#"><img src="img/telegram.svg" alt=""></a>
+							</div>
+							<div class="header_wrap_up_contacts_up_phones">
+								<a class="header_wrap_up_contacts_up_phones_link" href="tel:+421903770877">+421-903-770-877</a>
+								<a class="header_wrap_up_contacts_up_phones_link" href="tel:+421903407775">+421-903-407-775</a>
+							</div>
+						</div>
+						<div class="header_wrap_up_contacts_bottom">
+							<p class="header_wrap_up_contacts_bottom_addres">Lazaretská 8, 811 01 Bratislava, Slovakia</p>
+							<a class="header_wrap_up_contacts_bottom_mail" href="#"><img src="img/mail.svg" alt="">mail@realty-slovakia.ru</a>
+						</div>
+					</div>
+				</div>
+				<div class="header_wrap_mobile"><img src="img/menu.svg" alt="" width="14px" height="14px">Меню</div>
+				<nav class="header_wrap_nav">
+					<ul class="header_wrap_nav_menu">
+						<li><a class="header_wrap_nav_menu_link header_link header_wrap_nav_menu_active">Объекты недвижимости <img class="header_wrap_nav_more" src="img/more_active.svg" alt=""></a>
+							<ul class="header_wrap_nav_menu_submenu header_wrap_nav_menu_submenu1">
+								<li><a href="#">Квартиры</a></li>
+								<li><a href="#">Дома</a></li>
+								<li><a href="#">Коттеджи</a></li>
+								<li><a href="#">Участки</a></li>
+								<li class="header_wrap_nav_menu_submenu_link"><a>Офисы, коммерческая недвижимость <img class="header_wrap_nav_more" src="img/more_black.svg" alt=""></a>
+									<ul class="header_wrap_nav_menu_submenu_sub">
+										<li><a href="#">Офисы</a></li>
+										<li><a href="#">Склады</a></li>
+										<li><a href="#">Магазины</a></li>
+										<li><a href="#">Кафе</a></li>
+										<li><a href="#">Рестораны</a></li>
+									</ul>
+								</li>
+								<li class="header_wrap_nav_menu_submenu_link"><a>Бизнес <img class="header_wrap_nav_more" src="img/more_black.svg" alt=""></a>
+									<ul class="header_wrap_nav_menu_submenu_sub">
+										<li><a href="#">На продажу</a></li>
+										<li><a href="#">В аренду</a></li>
+										<li><a href="#">Переуступка прав</a></li>
+										<li><a href="#">Новостройки</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li><a class="header_wrap_nav_menu_link" href="#">Ипотека</a></li>
+						<li><a class="header_wrap_nav_menu_link header_link">Услуги <img class="header_wrap_nav_more" src="img/more_black.svg" alt=""></a>
+							<ul class="header_wrap_nav_menu_submenu header_wrap_nav_menu_submenu2">
+								<li><a href="#">Стоимость услуг</a></li>
+								<li><a href="#">Ремонт квартир</a></li>
+								<li><a href="#">Строительство домов и коттеджей</a></li>
+								<li><a href="#">Трансфер</a></li>
+								<li><a href="#">Миграционные услуги</a></li>
+								<li><a href="#">Бухгалтерские услуги</a></li>
+								<li><a href="#">Вакансии</a></li>
+							</ul>
+						</li>
+						<li><a class="header_wrap_nav_menu_link header_link">Блог <img class="header_wrap_nav_more" src="img/more_black.svg" alt=""></a>
+							<ul class="header_wrap_nav_menu_submenu">
+								<li><a href="#">Статьи</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</li>
+						<li><a class="header_wrap_nav_menu_link" href="#">Партнеры</a></li>
+						<li><a class="header_wrap_nav_menu_link" href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<section class="quest">
+		<div class="container">
+			<div class="quest_wrap">
+				<div class="quest_wrap_search">
+					<div class="quest_wrap_search_bth">
+						<a href="#sale" class="quest_wrap_search_bth_sale choise_active choise"><span>Продажа</span></a>
+						<a href="#rent" class="quest_wrap_search_bth_rent choise"><span>Аренда</span></a>
+						<a href="#build" class="quest_wrap_search_bth_build choise"><span>Новостройки</span></a>
+					</div>
+					<form class="quest_wrap_search_form">
+						<div class="quest_wrap_search_form_choise">
+							<input id="sale" type="radio" name="choise" value="sale" checked>
+							<input id="rent" type="radio" name="choise" value="rent">
+							<input id="build" type="radio" name="choise" value="build">
+						</div>
+						<div class="quest_wrap_search_form_select">
+							<p class="quest_wrap_search_form_select_title">Расположение</p>
+							<select class="quest_wrap_search_form_select_val" name="city">
+							  <option value="all">Город</option>
+							  <option value="city1">Город 1</option>
+							  <option value="city2">Город 2</option>
+							</select>
+						</div>
+						<div class="quest_wrap_search_form_select">
+							<p class="quest_wrap_search_form_select_title">Категория недвижимости</p>
+							<select class="quest_wrap_search_form_select_val" name="category">
+							  <option value="all">Не указана</option>
+							  <option value="cat1">Категория 1</option>
+							  <option value="cat2">Категория 2</option>
+							</select>
+						</div>
+						<div class="quest_wrap_search_form_price">
+							<p class="quest_wrap_search_form_price_title">Цена</p>
+							<div class="quest_wrap_search_form_price_block">
+								<input class="quest_wrap_search_form_price_block_inp" name="down" placeholder="От" type="text">
+								<input class="quest_wrap_search_form_price_block_inp" name="up" placeholder="До" type="text">
+							</div>
+						</div>
+						<button class="quest_wrap_search_form_bth">
+							<img src="img/search.svg" alt="" width="30px" height="30px">
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="catalog">
+		<div class="container">
+			<div class="catalog_wrap">
+				<div class="breadcrumbs">
+					<a href="#">Главная</a>
+					<span>></span>
+					<a href="#">Объекты</a>
+					<span>></span>
+					<span>Дома</span>
+				</div>
+				<div class="directory_wrap_nav">
+					<a class="directory_wrap_nav_link directory_wrap_nav_active" href="#">Квартиры</a>
+					<a class="directory_wrap_nav_link" href="#">Дома</a>
+					<a class="directory_wrap_nav_link" href="#">Участки</a>
+					<a class="directory_wrap_nav_link" href="#">Офисы</a>
+					<a class="directory_wrap_nav_link" href="#">Бизнес</a>
+				</div>
+				<div class="catalog_wrap_search">
+					<div class="catalog_wrap_search_text">
+						<h3 class="catalog_wrap_search_text_title">Продажа домов в Словакии</h3>
+						<p class="catalog_wrap_search_text_num">Найдено 826 объявлений</p>
+					</div>
+					<form class="search">
+						<div class="search_box">
+							<span class="search_box_text">Поиск</span>
+							<input class="search_box_inp" type="text" name="s">
+							<button class="search_box_bth"><img src="img/search.svg" width="15px" height="15px" alt=""></button>
+						</div>
+					</form>
+				</div>
+				<div class="catalog_wrap_filter">
+					<span>Сначала:</span>	
+					<a class="catalog_wrap_filter_link catalog_wrap_filter_active" href="#">новые объявления</a>
+					<a class="catalog_wrap_filter_link" href="#">дешевле</a>
+					<a class="catalog_wrap_filter_link" href="#">дороже</a>
+				</div>
+				<div class="catalog_wrap_block">
+					<div class="directory_wrap_block_item">
+						<a href="#" target="_blank" class="directory_wrap_block_item_img"><span class="directory_wrap_block_item_img_val" style="background-image: url('img/item1.jpg');"></span></a>
+						<div class="directory_wrap_block_item_up">
+							<a href="#" target="_blank" class="directory_wrap_block_item_up_title">Квартира</a>
+							<p class="directory_wrap_block_item_up_sale">Продажа</p>
+						</div>
+						<p class="directory_wrap_block_item_addres">851 07 Bratislava, Petržalka, Betliarska </p>
+						<p class="directory_wrap_block_item_area">Общая площадь, м² : 60.0</p>
+						<div class="directory_wrap_block_item_price">
+							<p class="directory_wrap_block_item_price_val">€ 550</p>
+							<p class="directory_wrap_block_item_price_num">№ 1532</p>
+						</div>
+						<div class="directory_wrap_block_item_bottom">
+							<p class="directory_wrap_block_item_bottom_text">Поделиться в</p>
+							<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="https://yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,pinterest,twitter" data-size="s" data-image="https://ru.pinterest.com/"></div>
+						</div>
+					</div>
+					<div class="directory_wrap_block_item">
+						<a href="#" target="_blank" class="directory_wrap_block_item_img"><span class="directory_wrap_block_item_img_val" style="background-image: url('img/item1.jpg');"></span></a>
+						<div class="directory_wrap_block_item_up">
+							<a href="#" target="_blank" class="directory_wrap_block_item_up_title">Квартира</a>
+							<p class="directory_wrap_block_item_up_rent">Аренда</p>
+						</div>
+						<p class="directory_wrap_block_item_addres">851 07 Bratislava, Petržalka, Betliarska </p>
+						<p class="directory_wrap_block_item_area">Общая площадь, м² : 60.0</p>
+						<div class="directory_wrap_block_item_price">
+							<p class="directory_wrap_block_item_price_val">€ 550</p>
+							<p class="directory_wrap_block_item_price_num">№ 1532</p>
+						</div>
+						<div class="directory_wrap_block_item_bottom">
+							<p class="directory_wrap_block_item_bottom_text">Поделиться в</p>
+							<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="https://yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,pinterest,twitter" data-size="s" data-image="https://ru.pinterest.com/"></div>
+						</div>
+					</div>
+					<div class="directory_wrap_block_item">
+						<a href="#" target="_blank" class="directory_wrap_block_item_img"><span class="directory_wrap_block_item_img_val" style="background-image: url('img/item1.jpg');"></span></a>
+						<div class="directory_wrap_block_item_up">
+							<a href="#" target="_blank" class="directory_wrap_block_item_up_title">Квартира</a>
+							<p class="directory_wrap_block_item_up_sale">Продажа</p>
+						</div>
+						<p class="directory_wrap_block_item_addres">851 07 Bratislava, Petržalka, Betliarska </p>
+						<p class="directory_wrap_block_item_area">Общая площадь, м² : 60.0</p>
+						<div class="directory_wrap_block_item_price">
+							<p class="directory_wrap_block_item_price_val">€ 550</p>
+							<p class="directory_wrap_block_item_price_num">№ 1532</p>
+						</div>
+						<div class="directory_wrap_block_item_bottom">
+							<p class="directory_wrap_block_item_bottom_text">Поделиться в</p>
+							<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="https://yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,pinterest,twitter" data-size="s" data-image="https://ru.pinterest.com/"></div>
+						</div>
+					</div>
+					<div class="directory_wrap_block_item">
+						<a href="#" target="_blank" class="directory_wrap_block_item_img"><span class="directory_wrap_block_item_img_val" style="background-image: url('img/item1.jpg');"></span></a>
+						<div class="directory_wrap_block_item_up">
+							<a href="#" target="_blank" class="directory_wrap_block_item_up_title">Квартира</a>
+							<p class="directory_wrap_block_item_up_sale">Продажа</p>
+						</div>
+						<p class="directory_wrap_block_item_addres">851 07 Bratislava, Petržalka, Betliarska </p>
+						<p class="directory_wrap_block_item_area">Общая площадь, м² : 60.0</p>
+						<div class="directory_wrap_block_item_price">
+							<p class="directory_wrap_block_item_price_val">€ 550</p>
+							<p class="directory_wrap_block_item_price_num">№ 1532</p>
+						</div>
+						<div class="directory_wrap_block_item_bottom">
+							<p class="directory_wrap_block_item_bottom_text">Поделиться в</p>
+							<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="https://yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,pinterest,twitter" data-size="s" data-image="https://ru.pinterest.com/"></div>
+						</div>
+					</div>
+					<div class="directory_wrap_block_item">
+						<a href="#" target="_blank" class="directory_wrap_block_item_img"><span class="directory_wrap_block_item_img_val" style="background-image: url('img/item1.jpg');"></span></a>
+						<div class="directory_wrap_block_item_up">
+							<a href="#" target="_blank" class="directory_wrap_block_item_up_title">Квартира</a>
+							<p class="directory_wrap_block_item_up_rent">Аренда</p>
+						</div>
+						<p class="directory_wrap_block_item_addres">851 07 Bratislava, Petržalka, Betliarska </p>
+						<p class="directory_wrap_block_item_area">Общая площадь, м² : 60.0</p>
+						<div class="directory_wrap_block_item_price">
+							<p class="directory_wrap_block_item_price_val">€ 550</p>
+							<p class="directory_wrap_block_item_price_num">№ 1532</p>
+						</div>
+						<div class="directory_wrap_block_item_bottom">
+							<p class="directory_wrap_block_item_bottom_text">Поделиться в</p>
+							<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="https://yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,pinterest,twitter" data-size="s" data-image="https://ru.pinterest.com/"></div>
+						</div>
+					</div>
+					<div class="directory_wrap_block_item">
+						<a href="#" target="_blank" class="directory_wrap_block_item_img"><span class="directory_wrap_block_item_img_val" style="background-image: url('img/item1.jpg');"></span></a>
+						<div class="directory_wrap_block_item_up">
+							<a href="#" target="_blank" class="directory_wrap_block_item_up_title">Квартира</a>
+							<p class="directory_wrap_block_item_up_sale">Продажа</p>
+						</div>
+						<p class="directory_wrap_block_item_addres">851 07 Bratislava, Petržalka, Betliarska </p>
+						<p class="directory_wrap_block_item_area">Общая площадь, м² : 60.0</p>
+						<div class="directory_wrap_block_item_price">
+							<p class="directory_wrap_block_item_price_val">€ 550</p>
+							<p class="directory_wrap_block_item_price_num">№ 1532</p>
+						</div>
+						<div class="directory_wrap_block_item_bottom">
+							<p class="directory_wrap_block_item_bottom_text">Поделиться в</p>
+							<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+							<script src="https://yastatic.net/share2/share.js"></script>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,pinterest,twitter" data-size="s" data-image="https://ru.pinterest.com/"></div>
+						</div>
+					</div>
+					<div class="directory_wrap_block_more">
+						<a class="directory_wrap_block_more_link" href="#"><img src="img/more_brown.svg" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_wrap">
+				<div class="footer_wrap_col">
+					<img class="footer_wrap_col_logo" src="img/footer_logo.svg" alt="">
+					<p class="footer_wrap_col_title">Контакты:</p>
+					<p class="footer_wrap_col_addres">Lazaretská 8, 811 01 Bratislava, Slovakia</p>
+					<div class="footer_wrap_col_phone">
+						<a href="#">+421-903-770-877</a>
+						<a href="#">+421-903-407-775</a>
+					</div>
+					<div class="footer_wrap_col_mail">
+						<a href="#"><img src="img/footer_mail.svg" alt="">mail@realty-slovakia.ru</a>
+						<a href="#"><img src="img/footer_mail.svg" alt="">realtyslovakia.ru@gmail.com</a>
+					</div>	
+				</div>
+				<div class="footer_wrap_col">
+					<p class="footer_wrap_col_title">Объекты недвижимости:</p>
+					<ul class="footer_wrap_col_menu">
+						<li><a href="#">Квартиры</a></li>
+						<li><a href="#">Дома</a></li>
+						<li><a href="#">Коттеджи</a></li>
+						<li><a href="#">Участки</a></li>
+						<li class="footer_wrap_col_menu_link">
+							<a>Коммерческая недвижимость <img class="footer_wrap_col_menu_more" src="img/more_white.svg" alt=""></a>
+							<ul class="footer_wrap_col_menu_submenu">
+								<li><a href="#">Офисы</a></li>
+								<li><a href="#">Склады</a></li>
+								<li><a href="#">Магазины</a></li>
+								<li><a href="#">Кафе</a></li>
+								<li><a href="#">Рестораны</a></li>
+							</ul>
+						</li>
+						<li class="footer_wrap_col_menu_link">
+							<a>Бизнес <img class="footer_wrap_col_menu_more" src="img/more_white.svg" alt=""></a>
+							<ul class="footer_wrap_col_menu_submenu">
+								<li><a href="#">На продажу</a></li>
+								<li><a href="#">В аренду</a></li>
+								<li><a href="#">Переуступка прав</a></li>
+								<li><a href="#">Новостройки</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_wrap_col">
+					<p class="footer_wrap_col_title">Услуги, полезная информация:</p>
+					<ul class="footer_wrap_col_menu">
+						<li><a href="#">Контакты</a></li>
+						<li><a href="#">Ипотека</a></li>
+						<li class="footer_wrap_col_menu_link">
+							<a>Услуги <img class="footer_wrap_col_menu_more" src="img/more_white.svg" alt=""></a>
+							<ul class="footer_wrap_col_menu_submenu">
+								<li><a href="#">Ремонт квартир</a></li>
+								<li><a href="#">Строительство домов и коттеджей</a></li>
+								<li><a href="#">Трансфер</a></li>
+								<li><a href="#">Миграционные услуги</a></li>
+								<li><a href="#">Языковые курсы</a></li>
+								<li><a href="#">Бухгалтерские услуги</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Прайс</a></li>
+						<li class="footer_wrap_col_menu_link">
+							<a>Блог <img class="footer_wrap_col_menu_more" src="img/more_white.svg" alt=""></a>
+							<ul class="footer_wrap_col_menu_submenu">
+								<li><a href="#">Статьи</a></li>
+								<li><a href="#">Новости</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Карта сайта</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Партнеры</a></li>
+					</ul>
+					<div class="footer_wrap_col_links">
+						<a href="#" >Reklamačný formulár</a>
+						<a href="#" >Пользовательское соглашение</a>
+						<a href="#" >Политика персональных данных</a>
+					</div>
+				</div>
+				<div class="footer_wrap_col">
+					<p class="footer_wrap_col_title">Подпишитесь на нашу рассылку:</p>
+					<form class="footer_wrap_col_form">
+						<div class="footer_wrap_col_form_box">
+							<span class="footer_wrap_col_form_box_text">Email</span>
+							<input class="footer_wrap_col_form_box_inp" type="text" name="email">
+							<button class="footer_wrap_col_form_box_bth"><img src="img/footer_next.svg" alt=""></button>
+						</div>
+					</form>
+					<div class="footer_wrap_col_soc">
+						<p class="footer_wrap_col_soc_title">Мы в соцсетях:</p>
+						<div class="footer_wrap_col_soc_icons">
+							<a href="https://www.youtube.com/channel/UCBFuLhnGC-1wLCUkTJOBOIQ" target="_blank"><img src="img/footer_youtube.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://pinterest.com/realtySlovakia/" target="_blank"><img src="img/footer_pint.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://vk.com/nedvizhimostvslovakii" target="_blank"><img src="img/footer_vk.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://www.facebook.com/NedvizimostSlovakia/" target="_blank"><img src="img/footer_fb.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://twitter.com/RealtySlovakia" target="_blank"><img src="img/footer_twitter.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://ok.ru/group/55045903810671" target="_blank"><img src="img/footer_odn.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://my.mail.ru/community/real_estate_in_slovakia/" target="_blank"><img src="img/footer_mailru.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://www.instagram.com/realty_slovakia_ru/" target="_blank"><img src="img/footer_inst.svg" alt="" width="20px" height="20px"></a>
+							<a href="https://goo.gl/maps/KFhvkEsLzbQPQz3y8" target="_blank"><img src="img/footer_map.svg" alt="" width="20px" height="20px"></a>
+						</div>
+					</div>
+					<a href="#" class="footer_wrap_col_widget">
+						<img src="img/footer_img.jpg" alt="">
+					</a>
+					<p class="footer_wrap_col_copy">Copyright © Realty-slovakia.ru</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="overlay">
+		<div class="close_mob"><img src="img/close.svg" width="22px" height="22px" alt=""></div>
+	</div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

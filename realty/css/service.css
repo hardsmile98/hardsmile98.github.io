@@ -1,0 +1,186 @@
+.service {
+  padding: 50px 0 100px 0; }
+  .service_wrap_title {
+    margin-top: 30px; }
+  .service_wrap_main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .service_wrap_main_text {
+      line-height: 20px; }
+    .service_wrap_main_left {
+      width: calc(50% - 30px); }
+      .service_wrap_main_left_img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        height: 400px; }
+      .service_wrap_main_left_desc {
+        margin-top: 55px; }
+        .service_wrap_main_left_desc_val {
+          font-family: "OpenSans-SemiBold";
+          line-height: 20px; }
+        .service_wrap_main_left_desc_min {
+          font-size: 12px;
+          line-height: 17px; }
+      .service_wrap_main_left_answers {
+        width: 100%;
+        margin: 50px 0; }
+        .service_wrap_main_left_answers_item {
+          margin-bottom: 20px;
+          cursor: pointer;
+          width: 100%;
+          padding: 9px 20px;
+          border: 1px solid #000; }
+          .service_wrap_main_left_answers_item_head {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            .service_wrap_main_left_answers_item_head_text {
+              padding-right: 10px; }
+              .service_wrap_main_left_answers_item_head_text span {
+                font-family: "OpenSans-SemiBold"; }
+            .service_wrap_main_left_answers_item_head_icon {
+              transition: 0.2s all ease; }
+          .service_wrap_main_left_answers_item_body {
+            display: none;
+            padding-right: 20px;
+            margin-top: 10px; }
+            .service_wrap_main_left_answers_item_body p {
+              line-height: 20px; }
+    .service_wrap_main_right {
+      width: calc(50% - 30px); }
+      .service_wrap_main_right_video {
+        margin-top: 40px; }
+        .service_wrap_main_right_video_text {
+          margin-bottom: 20px; }
+        .service_wrap_main_right_video_link {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 360px;
+          position: relative;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat; }
+          .service_wrap_main_right_video_link img {
+            transition: 0.3s all ease; }
+          .service_wrap_main_right_video_link img:hover {
+            opacity: 0.8; }
+      .service_wrap_main_right_price {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 70px; }
+        .service_wrap_main_right_price_title {
+          margin-bottom: 10px; }
+        .service_wrap_main_right_price_table {
+          line-height: 20px;
+          width: 100%;
+          border: 1px solid #000; }
+          .service_wrap_main_right_price_table_row {
+            border-top: 1px solid #000; }
+            .service_wrap_main_right_price_table_row td {
+              padding: 16px 20px; }
+          .service_wrap_main_right_price_table_head td {
+            padding: 10px 20px;
+            font-family: "OpenSans-SemiBold"; }
+        .service_wrap_main_right_price_desc {
+          margin-top: 15px;
+          font-size: 10px;
+          line-height: 14px; }
+  .service_wrap_imgs {
+    margin-top: 50px; }
+    .service_wrap_imgs_box {
+      margin: 0 -10px;
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap; }
+      .service_wrap_imgs_box a {
+        display: block;
+        width: calc(33.3% - 20px);
+        height: 265px;
+        margin: 0 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+    .service_wrap_imgs_show {
+      display: block;
+      margin-top: 20px;
+      transition: 0.3s all ease; }
+    .service_wrap_imgs_show:hover {
+      color: #CD9162; }
+    .service_wrap_imgs_hidden {
+      display: none; }
+
+.answers_item_opened .service_wrap_main_left_answers_item_head_icon {
+  transform: rotate(180deg); }
+
+@media screen and (max-width: 992px) {
+  .service {
+    padding: 50px 0 80px 0; }
+    .service_wrap_main_left {
+      width: 100%; }
+    .service_wrap_main_right {
+      width: 100%;
+      margin-top: 30px; }
+    .service_wrap_imgs_box a {
+      height: 180px; } }
+@media screen and (max-width: 768px) {
+  h3 {
+    font-size: 20px; }
+
+  .service {
+    padding: 50px 0 80px 0; }
+    .service_wrap_main {
+      margin-top: 20px; }
+      .service_wrap_main_left {
+        width: 100%; }
+        .service_wrap_main_left_img {
+          height: 340px; }
+        .service_wrap_main_left_desc {
+          margin-top: 30px; }
+        .service_wrap_main_left_answers {
+          margin: 30px 0; }
+      .service_wrap_main_right {
+        width: 100%;
+        margin-top: 30px; }
+        .service_wrap_main_right_video_link {
+          height: 320px; }
+        .service_wrap_main_right_price {
+          margin-top: 40px; }
+    .service_wrap_imgs {
+      margin-top: 30px; }
+      .service_wrap_imgs_box a {
+        height: 130px; } }
+@media screen and (max-width: 480px) {
+  h3 {
+    font-size: 18px;
+    line-height: 25px; }
+
+  .service {
+    padding: 50px 0; }
+    .service_wrap_main_left {
+      width: 100%; }
+      .service_wrap_main_left_img {
+        height: 240px; }
+    .service_wrap_main_right_video_link {
+      height: 240px; }
+    .service_wrap_main_right_price {
+      width: 100%; }
+      .service_wrap_main_right_price_table_row td {
+        padding: 12px 10px; }
+      .service_wrap_main_right_price_table_head td {
+        padding: 10px 10px; }
+    .service_wrap_imgs_box {
+      margin: 0 -5px;
+      margin-top: 20px; }
+      .service_wrap_imgs_box a {
+        width: calc(33.3% - 10px);
+        height: 80px;
+        margin: 0 5px; } }
+
+/*# sourceMappingURL=service.css.map */
