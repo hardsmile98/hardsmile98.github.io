@@ -1,0 +1,266 @@
+:root {
+   --text: white;
+   --bg: #0E191B;
+   --menu: #050A0D;
+
+   --fs-text: 15px;
+   --fs-desc: 18px;
+   --fs-h1: 38px;
+   --fs-button: 13px;
+   --fs-menu: 28px;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    font-size: var(--fs-text);
+    color: var(--text);
+    font-family: "PublicSans";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+    font-family: "LibreBaskerville";
+}
+
+a, button {
+    font-size: var(--fs-button);
+    cursor: pointer;
+}
+
+
+@keyframes show {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    padding: 0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+#header.scroll {
+    padding: 15px 0;
+    background: var(--menu);
+}
+
+.header {
+    animation: 1s show ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__list li:not(:first-of-type) {
+    margin-left: 50px;
+}
+
+.menu__list li a {
+	position: relative;
+}
+.menu__list li a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background-color: var(--text); 
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.menu__list li a:hover:after,
+.menu__list li a:focus:after {
+	width: 100%;
+}
+
+#menu__toggle {
+    display: none;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.menu__btn {
+    display: none;
+    align-items: center;
+    position: relative;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text);
+}
+
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+
+.menu__btn > span::after {
+    content: '';
+    top: 8px;
+}
+
+#person {
+    padding-top: 175px;
+    padding-bottom: 40px;
+    background-image: url('../images/bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer {
+    animation: 2s show ease;
+    max-width: 520px;
+}
+
+.offer__desc {
+    line-height: 30px;
+    margin: 30px 0;
+    font-size: var(--fs-desc);
+}
+
+.button {
+    display: inline-block;
+    border-radius: 80px;
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 15px 30px;
+    transition: 0.3s all ease;
+}
+
+.trusted {
+    margin-top: 110px;
+    animation: 2.5s show ease;
+}
+
+.button:hover {
+    border-color: var(--text);
+}
+
+.trusted__list {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trusted__list li{
+    width: calc(100% / 6 - 30px);
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.6);
+}
+
+@media (max-width: 768px) {
+    .menu__btn {
+        display: flex;
+    }
+
+    .menu__list {
+        visibility: hidden;
+        display: flex;
+        position: fixed;
+        width: 50%;
+        top: 0;
+        left: -100%;
+        transition: 0.3s all ease;
+        background-color: var(--text);
+        color: var(--bg);
+        height: 100vh;
+        flex-direction: column;
+        padding:  20px 10px;
+        z-index: 100;
+    }
+
+    .menu__list li a:after {
+        background-color: var(--bg);
+        height: 2px;
+    }
+
+    .menu__list li:not(:first-of-type) {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .menu__list li a {
+        font-size: var(--fs-menu);
+    }
+    
+    #menu__toggle:checked ~ .menu__list {
+        visibility: visible;
+        left: 0;
+    }
+
+    .offer {
+        max-width: 100%;
+    }
+
+    .trusted__list {
+        flex-wrap: wrap;
+    }
+
+    .trusted__list li{
+        margin-top: 20px;
+        width: calc(100% / 3 - 30px);
+    }
+ }
+
+ @media (max-width: 480px) {
+    .trusted__list li{
+        width: calc(100% / 2 - 30px);
+    }
+
+    .menu__list {
+        width: 80%;
+    }
+ }
